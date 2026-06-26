@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "siteName": "Adwokat Regina",
+    "defaultTitle": "Adwokat Regina",
+    "titleTemplate": "%s — Adwokat Regina",
+    "description": "Profesjonalna pomoc prawna: prawo antykorupcyjne, administracyjne, medyczne, cywilne i karne, mediacja, wsparcie deklaracji."
+  },
+  "nav": {
+    "home": "Strona główna",
+    "about": "O adwokacie",
+    "practices": "Praktyki",
+    "media": "Media",
+    "news": "Aktualności",
+    "contacts": "Kontakt"
+  },
+  "common": {
+    "readMore": "Czytaj więcej",
+    "back": "Wstecz",
+    "loading": "Ładowanie…",
+    "error": "Coś poszło nie tak. Spróbuj ponownie później.",
+    "empty": "Brak materiałów.",
+    "languageName": "Polski",
+    "getConsultation": "Uzyskaj konsultację"
+  },
+  "home": {
+    "hero": {
+      "title": "Adwokat Regina",
+      "subtitle": "Niezawodna ochrona i wsparcie prawne",
+      "cta": "Umów konsultację"
+    },
+    "metrics": {
+      "title": "W liczbach",
+      "yearsLabel": "lat praktyki",
+      "casesLabel": "wygranych spraw",
+      "clientsLabel": "klientów"
+    },
+    "practicesPreview": {
+      "title": "Obszary praktyki",
+      "viewAll": "Wszystkie praktyki"
+    }
+  },
+  "about": {
+    "title": "O adwokacie",
+    "intro": "",
+    "awards": {
+      "title": "Nagrody",
+      "intro": ""
+    },
+    "inMemory": {
+      "title": "Ku pamięci mamy",
+      "intro": ""
+    }
+  },
+  "practices": {
+    "title": "Praktyki",
+    "subtitle": "Obszary, w których świadczę pomoc prawną",
+    "items": {
+      "electronic-declarations": {
+        "title": "Wypełnianie e-deklaracji i wsparcie podczas pełnych kontroli",
+        "short": ""
+      },
+      "anti-corruption": { "title": "Prawo antykorupcyjne", "short": "" },
+      "administrative-law": { "title": "Prawo administracyjne", "short": "" },
+      "mediation": { "title": "Mediacja", "short": "" },
+      "medical-law": { "title": "Prawo medyczne", "short": "" },
+      "civil-servants-support": { "title": "Wsparcie prawne urzędników państwowych", "short": "" },
+      "civil-law": { "title": "Prawo cywilne", "short": "" },
+      "criminal-law": { "title": "Prawo karne", "short": "" }
+    }
+  },
+  "media": {
+    "title": "Media",
+    "subtitle": "Publikacje, wywiady i wystąpienia"
+  },
+  "news": {
+    "title": "Aktualności",
+    "subtitle": "Najnowsze wiadomości i aktualizacje"
+  },
+  "contacts": {
+    "title": "Kontakt",
+    "subtitle": "Skontaktuj się ze mną",
+    "form": {
+      "title": "Prośba o kontakt",
+      "name": "Imię",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "message": "Wiadomość",
+      "submit": "Wyślij",
+      "submitting": "Wysyłanie…",
+      "success": "Dziękujemy! Twoja wiadomość została wysłana.",
+      "error": "Nie udało się wysłać. Spróbuj ponownie.",
+      "validation": {
+        "nameRequired": "Podaj imię",
+        "emailInvalid": "Nieprawidłowy adres e-mail",
+        "messageRequired": "Napisz wiadomość"
+      }
+    }
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "navTitle": "Nawigacja",
+    "contactsTitle": "Kontakt"
+  }
+}

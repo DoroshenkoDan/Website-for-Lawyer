@@ -1,26 +1,40 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/**
+ * Design tokens — graphite + aqua palette.
+ *   #000000  header
+ *   #242625  hero background
+ *   #232B2C  cold graphite (text / dark surfaces)
+ *   #CBD6D8  metrics section
+ *   #2F8E86 / #2F9E94  action accent (aqua)
+ *   #D7DCDB  text on dark
+ */
+@theme {
+  --color-header: #000000;
+  --color-hero: #242625;
+  --color-graphite: #232b2c;
+  --color-metrics: #cbd6d8;
+  --color-accent: #2f8e86;
+  --color-accent-hover: #2f9e94;
+  --color-on-dark: #d7dcdb;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Semantic surface/text defaults */
+  --color-background: #ffffff;
+  --color-foreground: #232b2c;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Fonts (wired to next/font CSS variables) */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-lora), ui-serif, Georgia, serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+/* Headings use Lora */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
 }

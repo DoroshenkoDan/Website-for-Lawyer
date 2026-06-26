@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "siteName": "Адвокат Regina",
+    "defaultTitle": "Адвокат Regina",
+    "titleTemplate": "%s — Адвокат Regina",
+    "description": "Професійна правова допомога: антикорупційне, адміністративне, медичне, цивільне та кримінальне право, медіація, супровід декларацій."
+  },
+  "nav": {
+    "home": "Головна",
+    "about": "Про адвоката",
+    "practices": "Практики",
+    "media": "Медіа",
+    "news": "Новини",
+    "contacts": "Контакти"
+  },
+  "common": {
+    "readMore": "Детальніше",
+    "back": "Назад",
+    "loading": "Завантаження…",
+    "error": "Сталася помилка. Спробуйте пізніше.",
+    "empty": "Поки що немає матеріалів.",
+    "languageName": "Українська",
+    "getConsultation": "Отримати консультацію"
+  },
+  "home": {
+    "hero": {
+      "title": "Адвокат Regina",
+      "subtitle": "Надійний правовий захист та супровід",
+      "cta": "Записатися на консультацію"
+    },
+    "metrics": {
+      "title": "У цифрах",
+      "yearsLabel": "років практики",
+      "casesLabel": "успішних справ",
+      "clientsLabel": "клієнтів"
+    },
+    "practicesPreview": {
+      "title": "Напрями практики",
+      "viewAll": "Усі практики"
+    }
+  },
+  "about": {
+    "title": "Про адвоката",
+    "intro": "",
+    "awards": {
+      "title": "Нагороди",
+      "intro": ""
+    },
+    "inMemory": {
+      "title": "В пам'ять про маму",
+      "intro": ""
+    }
+  },
+  "practices": {
+    "title": "Практики",
+    "subtitle": "Напрями, у яких я надаю правову допомогу",
+    "items": {
+      "electronic-declarations": {
+        "title": "Заповнення електронних декларацій і супровід повних перевірок",
+        "short": ""
+      },
+      "anti-corruption": { "title": "Антикорупційне законодавство", "short": "" },
+      "administrative-law": { "title": "Адміністративне право", "short": "" },
+      "mediation": { "title": "Медіація", "short": "" },
+      "medical-law": { "title": "Медичне право", "short": "" },
+      "civil-servants-support": { "title": "Правовий супровід державних службовців", "short": "" },
+      "civil-law": { "title": "Цивільне право", "short": "" },
+      "criminal-law": { "title": "Кримінальне право", "short": "" }
+    }
+  },
+  "media": {
+    "title": "Медіа",
+    "subtitle": "Публікації, інтерв'ю та виступи"
+  },
+  "news": {
+    "title": "Новини",
+    "subtitle": "Останні новини та оновлення"
+  },
+  "contacts": {
+    "title": "Контакти",
+    "subtitle": "Зв'яжіться зі мною",
+    "form": {
+      "title": "Зворотний зв'язок",
+      "name": "Ім'я",
+      "email": "Електронна пошта",
+      "phone": "Телефон",
+      "message": "Повідомлення",
+      "submit": "Надіслати",
+      "submitting": "Надсилання…",
+      "success": "Дякуємо! Ваше повідомлення надіслано.",
+      "error": "Не вдалося надіслати. Спробуйте ще раз.",
+      "validation": {
+        "nameRequired": "Вкажіть ім'я",
+        "emailInvalid": "Невірна електронна пошта",
+        "messageRequired": "Напишіть повідомлення"
+      }
+    }
+  },
+  "footer": {
+    "rights": "Усі права захищені.",
+    "navTitle": "Навігація",
+    "contactsTitle": "Контакти"
+  }
+}

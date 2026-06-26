@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "siteName": "Attorney Regina",
+    "defaultTitle": "Attorney Regina",
+    "titleTemplate": "%s — Attorney Regina",
+    "description": "Professional legal assistance: anti-corruption, administrative, medical, civil and criminal law, mediation, declaration support."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "practices": "Practices",
+    "media": "Media",
+    "news": "News",
+    "contacts": "Contacts"
+  },
+  "common": {
+    "readMore": "Read more",
+    "back": "Back",
+    "loading": "Loading…",
+    "error": "Something went wrong. Please try again later.",
+    "empty": "No items yet.",
+    "languageName": "English",
+    "getConsultation": "Get a consultation"
+  },
+  "home": {
+    "hero": {
+      "title": "Attorney Regina",
+      "subtitle": "Reliable legal protection and support",
+      "cta": "Book a consultation"
+    },
+    "metrics": {
+      "title": "In numbers",
+      "yearsLabel": "years of practice",
+      "casesLabel": "successful cases",
+      "clientsLabel": "clients"
+    },
+    "practicesPreview": {
+      "title": "Practice areas",
+      "viewAll": "All practices"
+    }
+  },
+  "about": {
+    "title": "About the attorney",
+    "intro": "",
+    "awards": {
+      "title": "Awards",
+      "intro": ""
+    },
+    "inMemory": {
+      "title": "In memory of my mother",
+      "intro": ""
+    }
+  },
+  "practices": {
+    "title": "Practices",
+    "subtitle": "Areas in which I provide legal assistance",
+    "items": {
+      "electronic-declarations": {
+        "title": "Electronic declarations & full audit support",
+        "short": ""
+      },
+      "anti-corruption": { "title": "Anti-corruption law", "short": "" },
+      "administrative-law": { "title": "Administrative law", "short": "" },
+      "mediation": { "title": "Mediation", "short": "" },
+      "medical-law": { "title": "Medical law", "short": "" },
+      "civil-servants-support": { "title": "Legal support for civil servants", "short": "" },
+      "civil-law": { "title": "Civil law", "short": "" },
+      "criminal-law": { "title": "Criminal law", "short": "" }
+    }
+  },
+  "media": {
+    "title": "Media",
+    "subtitle": "Publications, interviews and talks"
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "Latest news and updates"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "subtitle": "Get in touch",
+    "form": {
+      "title": "Call-back request",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send",
+      "submitting": "Sending…",
+      "success": "Thank you! Your message has been sent.",
+      "error": "Failed to send. Please try again.",
+      "validation": {
+        "nameRequired": "Please enter your name",
+        "emailInvalid": "Invalid email address",
+        "messageRequired": "Please write a message"
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "navTitle": "Navigation",
+    "contactsTitle": "Contacts"
+  }
+}
