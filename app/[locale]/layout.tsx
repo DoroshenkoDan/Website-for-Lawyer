@@ -9,6 +9,8 @@ import { attorneyJsonLd } from "@/lib/jsonld";
 import { Providers } from "@/components/providers/Providers";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { MobileContactBar } from "@/components/layout/MobileContactBar";
+import { BookButton } from "@/components/layout/BookButton";
 import "../globals.css";
 
 const inter = Inter({
@@ -75,6 +77,8 @@ export default async function LocaleLayout({
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
+            <MobileContactBar />
+            <BookButton />
           </Providers>
         </NextIntlClientProvider>
       </body>

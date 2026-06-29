@@ -2,7 +2,7 @@
   "metadata": {
     "siteName": "Attorney Regina",
     "defaultTitle": "Attorney Regina",
-    "titleTemplate": "%s — Attorney Regina",
+    "titleTemplate": "%s - Attorney Regina",
     "description": "Professional legal assistance: anti-corruption, administrative, medical, civil and criminal law, mediation, declaration support."
   },
   "nav": {
@@ -12,6 +12,12 @@
     "media": "Media",
     "news": "News",
     "contacts": "Contacts"
+  },
+  "header": {
+    "contact": "Contact us",
+    "book": "Book a consultation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "common": {
     "readMore": "Read more",
@@ -24,9 +30,21 @@
   },
   "home": {
     "hero": {
-      "title": "Attorney Regina",
-      "subtitle": "Reliable legal protection and support",
-      "cta": "Book a consultation"
+      "badge": "Electronic declarations",
+      "title": "Reliable protection in the most complex cases",
+      "subtitle": "Asset declarations, anti-corruption proceedings, and support for public officials.",
+      "quote": "The law works when someone who knows how to use it is by your side. That is my job.",
+      "quoteAuthor": "Regina Guseinova, attorney",
+      "highlights": {
+        "approach": {
+          "title": "My approach",
+          "text": "I handle every case personally - from the first consultation to the result."
+        },
+        "position": {
+          "title": "My position",
+          "text": "Protection built on the law and your interest, not on influence."
+        }
+      }
     },
     "metrics": {
       "title": "In numbers",
@@ -59,13 +77,34 @@
         "title": "Electronic declarations & full audit support",
         "short": ""
       },
-      "anti-corruption": { "title": "Anti-corruption law", "short": "" },
-      "administrative-law": { "title": "Administrative law", "short": "" },
-      "mediation": { "title": "Mediation", "short": "" },
-      "medical-law": { "title": "Medical law", "short": "" },
-      "civil-servants-support": { "title": "Legal support for civil servants", "short": "" },
-      "civil-law": { "title": "Civil law", "short": "" },
-      "criminal-law": { "title": "Criminal law", "short": "" }
+      "anti-corruption": {
+        "title": "Anti-corruption law",
+        "short": ""
+      },
+      "administrative-law": {
+        "title": "Administrative law",
+        "short": ""
+      },
+      "mediation": {
+        "title": "Mediation",
+        "short": ""
+      },
+      "medical-law": {
+        "title": "Medical law",
+        "short": ""
+      },
+      "civil-servants-support": {
+        "title": "Legal support for civil servants",
+        "short": ""
+      },
+      "civil-law": {
+        "title": "Civil law",
+        "short": ""
+      },
+      "criminal-law": {
+        "title": "Criminal law",
+        "short": ""
+      }
     }
   },
   "media": {
@@ -99,6 +138,10 @@
   "footer": {
     "rights": "All rights reserved.",
     "navTitle": "Navigation",
-    "contactsTitle": "Contacts"
+    "contactsTitle": "Contacts",
+    "tagline": "Reliable legal protection in complex cases. Experience proven by results.",
+    "partnersTitle": "Partners",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy"
   }
 }

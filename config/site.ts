@@ -9,16 +9,23 @@ export const siteConfig = {
   attorneyName: "Regina",
   /** Contact details (override via content later). */
   contacts: {
-    email: "",
+    email: "r.guseinova.lawyer@gmail.com",
     phone: "",
     address: "",
   },
-  /** Social links (empty = hidden). */
+  /** Social links (empty = falls back to "#" until provided). */
   social: {
     facebook: "",
-    instagram: "",
+    youtube: "",
     linkedin: "",
   },
+  /** Professional partners / associations shown in the footer. */
+  partners: [
+    { name: "Національна колегія адвокатів", href: "" },
+    { name: "Яр.ВАЛ", href: "" },
+    { name: "Легітимус", href: "" },
+    { name: "Національна асоціація медіаторів України", href: "" },
+  ],
 } as const;
 
 export type SiteConfig = typeof siteConfig;
