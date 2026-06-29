@@ -7,7 +7,7 @@ import { HeroQuote } from "./HeroQuote";
  */
 export function HeroMedia() {
   return (
-    <div className="relative h-120 overflow-hidden rounded-[14px] bg-linear-to-br from-accent-deep to-[#0f2a31] sm:h-140 xl:h-155">
+    <div className="relative h-120 overflow-hidden rounded-[14px] bg-linear-to-br from-accent-deep to-firefly sm:h-140 xl:h-155">
       {/* Video placeholder */}
       <div
         aria-hidden
