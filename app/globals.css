@@ -18,6 +18,7 @@
   --color-hero: #242625;
   --color-graphite: #232b2c;
   --color-graphite-deep: #16191a;
+  --color-graphite-card: #1f2625; /* practice card surface (gradient base) */
   --color-metrics: #cbd6d8;
   --color-accent: #2f8e86;
   --color-accent-hover: #2f9e94;
@@ -26,6 +27,7 @@
   --color-white: #ffffff;
   --color-grey: #9fb2b3;
   --color-muted: #8da2a4;
+  --color-submarine: #c2cac9; /* dimmed text on dark surfaces */
   --color-sage: #8fa193;
   --color-sage-dim: #728475;
   --color-sage-deep: #4a5c4e;

@@ -20,7 +20,7 @@ export function PracticesPreview() {
           <h2 className="font-heading text-[1.75rem] font-semibold text-graphite">
             {t("title")}
           </h2>
-          <p className="text-sm text-[#51666a] lg:max-w-sm lg:text-right">
+          <p className="text-sm text-graphite/70 lg:max-w-sm lg:text-right">
             {t("subtitle")}
           </p>
         </header>
