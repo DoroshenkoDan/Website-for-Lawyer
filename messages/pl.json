@@ -15,7 +15,7 @@
   },
   "header": {
     "contact": "Skontaktuj się",
-    "book": "Umów konsultację",
+    "book": "Skontaktuj się",
     "openMenu": "Otwórz menu",
     "closeMenu": "Zamknij menu"
   },
@@ -54,7 +54,28 @@
     },
     "practicesPreview": {
       "title": "Obszary praktyki",
-      "viewAll": "Wszystkie praktyki"
+      "subtitle": "Wyspecjalizowane dziedziny, w których prowadzę sprawy osobiście i do rezultatu.",
+      "viewAll": "Wszystkie praktyki",
+      "cards": {
+        "electronic-declarations": {
+          "name": "Deklaracje elektroniczne",
+          "question": "Czeka Cię kontrola NAPK?",
+          "tagline": "Chroń swoją deklarację i reputację.",
+          "description": "Pełne wsparcie na każdym etapie: wypełnianie deklaracji, odpowiedzi na zapytania NAPK i obrona podczas pełnych kontroli."
+        },
+        "civil-servants-support": {
+          "name": "Wsparcie urzędników państwowych",
+          "question": "Presja w służbie publicznej?",
+          "tagline": "Chroń swoje prawa i stanowisko.",
+          "description": "Wsparcie prawne urzędników w sporach służbowych, postępowaniach dyscyplinarnych i antykorupcyjnych."
+        },
+        "criminal-law": {
+          "name": "Przestępstwa gospodarcze (white-collar)",
+          "question": "Oskarżenie o przestępstwo gospodarcze?",
+          "tagline": "Zbudujemy linię obrony.",
+          "description": "Obrona w sprawach o przestępstwa służbowe i gospodarcze — od postępowania przygotowawczego po sąd."
+        }
+      }
     }
   },
   "about": {

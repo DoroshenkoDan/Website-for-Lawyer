@@ -15,7 +15,7 @@
   },
   "header": {
     "contact": "Contact us",
-    "book": "Book a consultation",
+    "book": "Contact us",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
@@ -54,7 +54,28 @@
     },
     "practicesPreview": {
       "title": "Practice areas",
-      "viewAll": "All practices"
+      "subtitle": "Specialised areas where I handle cases personally and to the result.",
+      "viewAll": "All practices",
+      "cards": {
+        "electronic-declarations": {
+          "name": "Electronic declarations",
+          "question": "Facing an NACP audit?",
+          "tagline": "Protect your declaration and reputation.",
+          "description": "Full support at every stage: completing declarations, responding to NACP requests, and defence during full audits."
+        },
+        "civil-servants-support": {
+          "name": "Support for public officials",
+          "question": "Under pressure in public service?",
+          "tagline": "Protect your rights and your position.",
+          "description": "Legal support for officials in service disputes, disciplinary and anti-corruption proceedings."
+        },
+        "criminal-law": {
+          "name": "Economic crimes (white-collar)",
+          "question": "Accused of an economic crime?",
+          "tagline": "We will build your line of defence.",
+          "description": "Defence in service and business crime cases — from the pre-trial investigation to court."
+        }
+      }
     }
   },
   "about": {
