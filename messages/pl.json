@@ -76,6 +76,19 @@
           "description": "Obrona w sprawach o przestępstwa służbowe i gospodarcze — od postępowania przygotowawczego po sąd."
         }
       }
+    },
+    "aboutPreview": {
+      "badge": "O adwokacie",
+      "title": "Regina Husejnowa: adwokat, mediator, wykładowczyni",
+      "lead": "Adwokat skupiona na deklaracjach elektronicznych, prawie antykorupcyjnym i wsparciu urzędników państwowych. Prowadzę sprawy osobiście — od pierwszej konsultacji do rezultatu.",
+      "secondary": "Certyfikowana mediatorka, regularnie prowadzę wykłady dla sędziów i urzędników. Łączę głęboką znajomość prawa z praktycznym doświadczeniem w najtrudniejszych sprawach.",
+      "credentials": [
+        "Adwokat, członkini Krajowej Izby Adwokackiej",
+        "Certyfikowany mediator",
+        "Wykładowczyni dla sędziów i urzędników państwowych",
+        "Członkini Krajowego Stowarzyszenia Mediatorów Ukrainy"
+      ],
+      "cta": "Więcej o adwokacie"
     }
   },
   "about": {

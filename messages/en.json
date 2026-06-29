@@ -76,6 +76,19 @@
           "description": "Defence in service and business crime cases — from the pre-trial investigation to court."
         }
       }
+    },
+    "aboutPreview": {
+      "badge": "About the attorney",
+      "title": "Regina Guseinova: attorney, mediator, lecturer",
+      "lead": "An attorney focused on electronic declarations, anti-corruption law, and support for public officials. I handle cases personally — from the first consultation to the result.",
+      "secondary": "A certified mediator, I regularly lecture for judges and officials. I combine deep knowledge of the law with practical experience in the most complex cases.",
+      "credentials": [
+        "Attorney, member of the National Bar Association",
+        "Certified mediator",
+        "Lecturer for judges and public officials",
+        "Member of the National Association of Mediators of Ukraine"
+      ],
+      "cta": "More about the attorney"
     }
   },
   "about": {
