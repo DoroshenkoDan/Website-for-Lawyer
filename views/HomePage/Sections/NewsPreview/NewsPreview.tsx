@@ -29,7 +29,7 @@ export function NewsPreview() {
   const viewAllLink = (className?: string) => (
     <Link
       href="/news"
-      className={cn(buttonVariants({ variant: "outline", size: "sm" }), "gap-2", className)}
+      className={cn(buttonVariants({ variant: "secondary", size: "sm" }), "gap-2", className)}
     >
       {t("viewAll")}
       <ArrowRight className="size-4" aria-hidden />

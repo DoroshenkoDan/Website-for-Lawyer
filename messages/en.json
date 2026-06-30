@@ -79,7 +79,7 @@
       }
     },
     "aboutPreview": {
-      "badge": "About the attorney",
+      "eyebrow": "About me",
       "title": "Regina Guseinova: attorney, mediator, lecturer",
       "lead": "An attorney focused on electronic declarations, anti-corruption law, and support for public officials. I handle cases personally — from the first consultation to the result.",
       "secondary": "A certified mediator, I regularly lecture for judges and officials. I combine deep knowledge of the law with practical experience in the most complex cases.",
@@ -98,6 +98,7 @@
     "expertise": {
       "eyebrow": "Expertise",
       "title": "Expertise",
+      "viewAll": "All materials",
       "lectures": {
         "title": "Seminars and lectures",
         "nazk": "NACP — lecture for public officials (2024)",

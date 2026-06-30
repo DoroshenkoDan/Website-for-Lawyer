@@ -79,7 +79,7 @@
       }
     },
     "aboutPreview": {
-      "badge": "O adwokacie",
+      "eyebrow": "O mnie",
       "title": "Regina Husejnowa: adwokat, mediator, wykładowczyni",
       "lead": "Adwokat skupiona na deklaracjach elektronicznych, prawie antykorupcyjnym i wsparciu urzędników państwowych. Prowadzę sprawy osobiście — od pierwszej konsultacji do rezultatu.",
       "secondary": "Certyfikowana mediatorka, regularnie prowadzę wykłady dla sędziów i urzędników. Łączę głęboką znajomość prawa z praktycznym doświadczeniem w najtrudniejszych sprawach.",
@@ -98,6 +98,7 @@
     "expertise": {
       "eyebrow": "Ekspertyza",
       "title": "Ekspertyza",
+      "viewAll": "Wszystkie materiały",
       "lectures": {
         "title": "Seminaria i wykłady",
         "nazk": "NAZK — wykład dla urzędników państwowych (2024)",

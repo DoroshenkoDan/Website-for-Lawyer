@@ -52,7 +52,7 @@ export function PracticesPreview() {
         <div className="mt-10 flex justify-center">
           <Link
             href="/practices"
-            className={cn(buttonVariants({ variant: "outline" }), "gap-2")}
+            className={cn(buttonVariants({ variant: "secondary" }), "gap-2")}
           >
             {t("viewAll")}
             <ArrowRight className="size-4" aria-hidden />

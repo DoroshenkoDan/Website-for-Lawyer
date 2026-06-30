@@ -2,7 +2,6 @@ import { useTranslations } from "next-intl"
 import { ArrowRight } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 import { Container } from "@/components/layout/Container"
-import { Badge } from "@/components/ui/badge"
 import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { AboutGallery } from "./AboutGallery"
@@ -16,11 +15,11 @@ export function AboutPreview() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[558fr_682fr] lg:gap-10">
           <div className="flex flex-col">
-            <Badge variant="outline" className="self-start border-accent text-accent">
-              {t("badge")}
-            </Badge>
+            <p className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+              {t("eyebrow")}
+            </p>
 
-            <h2 className="mt-6 max-w-lg font-heading text-[1.75rem] font-semibold leading-tight text-graphite lg:text-[2rem]">
+            <h2 className="mt-3 max-w-lg font-heading text-[1.75rem] font-semibold leading-tight text-graphite lg:text-[2rem]">
               {t("title")}
             </h2>
 
@@ -42,7 +41,7 @@ export function AboutPreview() {
 
             <Link
               href="/about"
-              className={cn(buttonVariants({ variant: "primary", size: "lg" }), "mt-8 w-full text-white lg:w-auto lg:self-start")}
+              className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "mt-8 w-full lg:w-auto lg:self-start")}
             >
               {t("cta")}
               <ArrowRight className="size-4" aria-hidden />
