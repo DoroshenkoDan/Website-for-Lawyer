@@ -26,7 +26,8 @@
     "error": "Something went wrong. Please try again later.",
     "empty": "No items yet.",
     "languageName": "English",
-    "getConsultation": "Get a consultation"
+    "getConsultation": "Get a consultation",
+    "playVideo": "Play video"
   },
   "home": {
     "hero": {
@@ -93,6 +94,50 @@
     "quote": {
       "text": "The law works when someone who knows how to use it is by your side. That is my job.",
       "author": "Regina Guseinova"
+    },
+    "expertise": {
+      "eyebrow": "Expertise",
+      "title": "Expertise",
+      "lectures": {
+        "title": "Seminars and lectures",
+        "nazk": "NACP — lecture for public officials (2024)",
+        "judges-school": "National School of Judges of Ukraine — declaration workshop",
+        "odesa-council": "Odesa Regional Council — anti-corruption law seminar",
+        "ministry-justice": "Ministry of Justice of Ukraine — webinar for lawyers",
+        "national-academy": "National Academy of Public Administration — lecture series"
+      },
+      "media": {
+        "title": "Media commentary",
+        "subtitle": "Commentary and appearances in the media."
+      },
+      "videos": {
+        "tv-comment": "TV commentary — anti-corruption legislation",
+        "interview": "Interview — electronic declarations",
+        "forum": "Talk at the public officials forum"
+      }
+    },
+    "newsPreview": {
+      "eyebrow": "Blog",
+      "title": "Useful insights on law",
+      "viewAll": "All articles",
+      "read": "Read",
+      "articles": {
+        "nazk-checklist": {
+          "category": "Declarations",
+          "title": "How to prepare for an NACP audit: a step-by-step checklist",
+          "excerpt": "An NACP audit is a serious test even for experienced public officials. We break down what they check and how to prepare in advance."
+        },
+        "proceedings-opened": {
+          "category": "Anti-corruption law",
+          "title": "What to do if proceedings are opened against you",
+          "excerpt": "The first steps after receiving a summons or a notice of suspicion — from choosing a defender to your conduct during questioning."
+        },
+        "declaration-mistakes": {
+          "category": "Public service",
+          "title": "Common mistakes in electronic declarations",
+          "excerpt": "An analysis of the most common mistakes that lead to violations and fines. How to avoid them and what to do if one has already been made."
+        }
+      }
     }
   },
   "about": {

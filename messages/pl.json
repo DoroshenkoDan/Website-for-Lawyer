@@ -26,7 +26,8 @@
     "error": "Coś poszło nie tak. Spróbuj ponownie później.",
     "empty": "Brak materiałów.",
     "languageName": "Polski",
-    "getConsultation": "Uzyskaj konsultację"
+    "getConsultation": "Uzyskaj konsultację",
+    "playVideo": "Odtwórz wideo"
   },
   "home": {
     "hero": {
@@ -93,6 +94,50 @@
     "quote": {
       "text": "Prawo działa wtedy, gdy obok jest ktoś, kto potrafi z niego korzystać. To moja praca.",
       "author": "Regina Husejnowa"
+    },
+    "expertise": {
+      "eyebrow": "Ekspertyza",
+      "title": "Ekspertyza",
+      "lectures": {
+        "title": "Seminaria i wykłady",
+        "nazk": "NAZK — wykład dla urzędników państwowych (2024)",
+        "judges-school": "Krajowa Szkoła Sędziów Ukrainy — warsztat z deklaracji",
+        "odesa-council": "Odeska Rada Obwodowa — seminarium z prawa antykorupcyjnego",
+        "ministry-justice": "Ministerstwo Sprawiedliwości Ukrainy — webinar dla prawników",
+        "national-academy": "Krajowa Akademia Administracji Publicznej — cykl wykładów"
+      },
+      "media": {
+        "title": "Komentarze dla mediów",
+        "subtitle": "Komentarze i wystąpienia w przestrzeni medialnej."
+      },
+      "videos": {
+        "tv-comment": "Komentarz dla telewizji — ustawodawstwo antykorupcyjne",
+        "interview": "Wywiad — deklaracje elektroniczne",
+        "forum": "Wystąpienie na forum urzędników państwowych"
+      }
+    },
+    "newsPreview": {
+      "eyebrow": "Blog",
+      "title": "Przydatne o prawie",
+      "viewAll": "Wszystkie artykuły",
+      "read": "Czytaj",
+      "articles": {
+        "nazk-checklist": {
+          "category": "Deklaracje",
+          "title": "Jak przygotować się do kontroli NAZK: lista krok po kroku",
+          "excerpt": "Kontrola NAZK to poważny sprawdzian nawet dla doświadczonych urzędników. Wyjaśniamy, co jest sprawdzane i jak przygotować się z wyprzedzeniem."
+        },
+        "proceedings-opened": {
+          "category": "Prawo antykorupcyjne",
+          "title": "Co robić, gdy wszczęto przeciwko tobie postępowanie",
+          "excerpt": "Pierwsze kroki po otrzymaniu wezwania lub zawiadomienia o podejrzeniu — od wyboru obrońcy po strategię zachowania podczas przesłuchania."
+        },
+        "declaration-mistakes": {
+          "category": "Służba publiczna",
+          "title": "Typowe błędy w deklaracjach elektronicznych",
+          "excerpt": "Analiza najczęstszych błędów prowadzących do naruszeń i kar. Jak ich uniknąć i co zrobić, gdy błąd już popełniono."
+        }
+      }
     }
   },
   "about": {
