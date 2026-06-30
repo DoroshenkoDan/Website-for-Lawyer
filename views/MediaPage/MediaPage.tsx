@@ -1,19 +1,17 @@
-"use client";
+"use client"
 
-import { useLocale, useTranslations } from "next-intl";
-import { PageIntro } from "@/components/sections/PageIntro";
-import { Container } from "@/components/layout/Container";
-import { useMedia } from "@/hooks/useMedia";
+import { useLocale, useTranslations } from "next-intl"
+import { Container } from "@/components/layout/Container"
+import { useMedia } from "@/hooks/useMedia"
 
 export function MediaPage() {
-  const t = useTranslations("media");
-  const tc = useTranslations("common");
-  const locale = useLocale();
-  const { data, isLoading, isError } = useMedia(locale);
+  const t = useTranslations("media")
+  const tc = useTranslations("common")
+  const locale = useLocale()
+  const { data, isLoading, isError } = useMedia(locale)
 
   return (
     <>
-      <PageIntro title={t("title")} subtitle={t("subtitle")} />
       <Container className="py-16">
         {isLoading && <p className="text-graphite/60">{tc("loading")}</p>}
         {isError && <p className="text-graphite/60">{tc("error")}</p>}
@@ -43,5 +41,5 @@ export function MediaPage() {
         )}
       </Container>
     </>
-  );
+  )
 }

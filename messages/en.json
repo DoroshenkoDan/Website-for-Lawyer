@@ -156,38 +156,45 @@
   "practices": {
     "title": "Practices",
     "subtitle": "Areas in which I provide legal assistance",
+    "lead": "Eight specialised areas — from anti-corruption defence to corporate disputes. Each one means deep expertise and hands-on experience.",
+    "imageAlt": "Regina Huseinova, attorney",
+    "cta": {
+      "title": "Not sure which area is yours?",
+      "text": "Book a consultation — we'll help you find the practice that fits your situation.",
+      "button": "Get in touch"
+    },
     "items": {
       "electronic-declarations": {
         "title": "Electronic declarations & full audit support",
-        "short": ""
+        "short": "Support throughout filing electronic declarations, compliance review and defence when violations are found."
       },
       "anti-corruption": {
         "title": "Anti-corruption law",
-        "short": ""
+        "short": "Advice on anti-corruption law, representation before NABU and SAPO, and defence at the pre-trial investigation stage."
       },
       "administrative-law": {
         "title": "Administrative law",
-        "short": ""
+        "short": "Challenging unlawful actions of authorities and protecting your rights in dealings with state and local government bodies."
       },
       "mediation": {
         "title": "Mediation",
-        "short": ""
+        "short": "Out-of-court dispute resolution: negotiation, finding common ground and concluding mediation agreements without litigation."
       },
       "medical-law": {
         "title": "Medical law",
-        "short": ""
+        "short": "Protecting the rights of patients and medical staff, disputes with healthcare institutions and medical malpractice matters."
       },
       "civil-servants-support": {
         "title": "Legal support for civil servants",
-        "short": ""
+        "short": "Legal protection for civil servants: disciplinary proceedings, appealing decisions and reinstatement to office."
       },
       "civil-law": {
         "title": "Civil law",
-        "short": ""
+        "short": "Representation in civil cases: contractual disputes, recovery of damages and inheritance matters."
       },
       "criminal-law": {
         "title": "Criminal law",
-        "short": ""
+        "short": "Comprehensive defence in criminal proceedings — from the first interrogation to appealing the verdict."
       }
     }
   },

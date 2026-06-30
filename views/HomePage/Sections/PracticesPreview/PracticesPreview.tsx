@@ -14,7 +14,7 @@ export function PracticesPreview() {
   const common = useTranslations("common")
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-haze py-20">
       <Container>
         <header className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
           <h2 className="font-heading text-[1.75rem] font-semibold text-graphite">

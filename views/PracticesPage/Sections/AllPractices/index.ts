@@ -1,0 +1,1 @@
+export { AllPractices } from "./AllPractices";

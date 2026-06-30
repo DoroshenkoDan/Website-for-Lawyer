@@ -11,7 +11,7 @@ export function AboutPreview() {
   const credentials = t.raw("credentials") as string[]
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-haze py-20">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[558fr_682fr] lg:gap-10">
           <div className="flex flex-col">

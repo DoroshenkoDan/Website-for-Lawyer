@@ -156,38 +156,45 @@
   "practices": {
     "title": "Praktyki",
     "subtitle": "Obszary, w których świadczę pomoc prawną",
+    "lead": "Osiem wyspecjalizowanych obszarów — od obrony antykorupcyjnej po spory korporacyjne. Każdy z nich to głęboka wiedza i praktyczne doświadczenie.",
+    "imageAlt": "Regina Huseinova, adwokat",
+    "cta": {
+      "title": "Nie masz pewności, który obszar jest Twój?",
+      "text": "Umów się na konsultację — podpowiemy, która praktyka odpowiada Twojej sytuacji.",
+      "button": "Skontaktuj się"
+    },
     "items": {
       "electronic-declarations": {
         "title": "Wypełnianie e-deklaracji i wsparcie podczas pełnych kontroli",
-        "short": ""
+        "short": "Wsparcie w procesie składania e-deklaracji, weryfikacja zgodności z przepisami oraz obrona w razie wykrycia naruszeń."
       },
       "anti-corruption": {
         "title": "Prawo antykorupcyjne",
-        "short": ""
+        "short": "Doradztwo w zakresie prawa antykorupcyjnego, reprezentacja przed NABU i SAP oraz obrona na etapie postępowania przygotowawczego."
       },
       "administrative-law": {
         "title": "Prawo administracyjne",
-        "short": ""
+        "short": "Zaskarżanie bezprawnych działań organów władzy i ochrona praw w relacjach z organami państwowymi i samorządowymi."
       },
       "mediation": {
         "title": "Mediacja",
-        "short": ""
+        "short": "Pozasądowe rozwiązywanie sporów: negocjacje, poszukiwanie kompromisu i zawieranie ugód mediacyjnych bez postępowania sądowego."
       },
       "medical-law": {
         "title": "Prawo medyczne",
-        "short": ""
+        "short": "Ochrona praw pacjentów i personelu medycznego, spory z placówkami ochrony zdrowia oraz sprawy o błędy medyczne."
       },
       "civil-servants-support": {
         "title": "Wsparcie prawne urzędników państwowych",
-        "short": ""
+        "short": "Ochrona prawna urzędników państwowych: postępowania dyscyplinarne, zaskarżanie decyzji i przywrócenie do pracy."
       },
       "civil-law": {
         "title": "Prawo cywilne",
-        "short": ""
+        "short": "Reprezentacja w sprawach cywilnych: spory umowne, odszkodowania oraz sprawy spadkowe."
       },
       "criminal-law": {
         "title": "Prawo karne",
-        "short": ""
+        "short": "Kompleksowa obrona w postępowaniach karnych — od pierwszego przesłuchania po apelację od wyroku."
       }
     }
   },

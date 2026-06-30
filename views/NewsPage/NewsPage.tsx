@@ -1,20 +1,18 @@
-"use client";
+"use client"
 
-import { useLocale, useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import { PageIntro } from "@/components/sections/PageIntro";
-import { Container } from "@/components/layout/Container";
-import { useNews } from "@/hooks/useNews";
+import { useLocale, useTranslations } from "next-intl"
+import { Link } from "@/i18n/navigation"
+import { Container } from "@/components/layout/Container"
+import { useNews } from "@/hooks/useNews"
 
 export function NewsPage() {
-  const t = useTranslations("news");
-  const tc = useTranslations("common");
-  const locale = useLocale();
-  const { data, isLoading, isError } = useNews(locale);
+  const t = useTranslations("news")
+  const tc = useTranslations("common")
+  const locale = useLocale()
+  const { data, isLoading, isError } = useNews(locale)
 
   return (
     <>
-      <PageIntro title={t("title")} subtitle={t("subtitle")} />
       <Container className="py-16">
         {isLoading && <p className="text-graphite/60">{tc("loading")}</p>}
         {isError && <p className="text-graphite/60">{tc("error")}</p>}
@@ -40,5 +38,5 @@ export function NewsPage() {
         )}
       </Container>
     </>
-  );
+  )
 }

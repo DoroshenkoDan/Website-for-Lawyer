@@ -1,7 +1,6 @@
-import { useTranslations } from "next-intl";
-import { PageIntro } from "@/components/sections/PageIntro";
-import { Container } from "@/components/layout/Container";
-import type { PracticeId } from "@/config/practices";
+import { useTranslations } from "next-intl"
+import { Container } from "@/components/layout/Container"
+import type { PracticeId } from "@/config/practices"
 
 /**
  * Generic skeleton for a single practice page.
@@ -9,17 +8,16 @@ import type { PracticeId } from "@/config/practices";
  * render bespoke content/sections (e.g. electronic-declarations sub-categories).
  */
 export function PracticeArticle({ id }: { id: PracticeId }) {
-  const t = useTranslations("practices.items");
-  const short = t(`${id}.short`);
+  const t = useTranslations("practices.items")
+  const short = t(`${id}.short`)
 
   return (
     <>
-      <PageIntro title={t(`${id}.title`)} subtitle={short || undefined} />
       <Container className="py-16">
         <article className="max-w-3xl text-graphite/80">
           {/* TODO: content for practice "{id}" */}
         </article>
       </Container>
     </>
-  );
+  )
 }

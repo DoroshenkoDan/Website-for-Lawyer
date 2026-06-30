@@ -21,7 +21,7 @@ export function Expertise() {
   )
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-haze py-20">
       <Container>
         <header className="flex items-end justify-between gap-6">
           <div className="flex flex-col gap-3">
