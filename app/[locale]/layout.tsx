@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { siteConfig } from "@/config/site";
 import { attorneyJsonLd } from "@/lib/jsonld";
 import { Providers } from "@/components/providers/Providers";
+import { Aurora } from "@/components/layout/Aurora";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileContactBar } from "@/components/layout/MobileContactBar";
@@ -66,6 +67,7 @@ export default async function LocaleLayout({
       className={`${inter.variable} ${lora.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
+        <Aurora />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
