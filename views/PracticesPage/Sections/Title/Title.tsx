@@ -17,37 +17,37 @@ export function Title() {
   const tNav = useTranslations("nav")
 
   return (
-    <section className="overflow-hidden bg-haze">
-      <Container className="grid items-center gap-12 pb-16 pt-28 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pb-24 lg:pt-38">
+    <section className="overflow-hidden ">
+      <Container className="grid items-center gap-12 pb-16 pt-22 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pb-24 lg:pt-32">
         <div className="flex flex-col">
           <nav aria-label="breadcrumb">
             <ol className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.12em]">
               <li>
                 <Link
                   href="/"
-                  className="text-accent transition-colors hover:text-accent-hover"
+                  className="text-accent-hover transition-colors hover:text-white"
                 >
                   {tNav("home")}
                 </Link>
               </li>
-              <li aria-hidden className="text-graphite/40">
+              <li aria-hidden className="text-white/30">
                 /
               </li>
-              <li className="text-graphite/70">{t("title")}</li>
+              <li className="text-white/70">{t("title")}</li>
             </ol>
           </nav>
 
-          <h1 className="mt-5 font-heading text-[2.75rem] font-medium leading-[1.05] tracking-tight text-graphite sm:text-6xl lg:text-[5rem] xl:text-[5.5rem]">
+          <h1 className="mt-5 font-heading text-[2.75rem] font-medium leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-[5rem] xl:text-[5.5rem]">
             {t("title")}
           </h1>
 
-          <p className="mt-6 max-w-[520px] text-lg leading-relaxed text-graphite/70">
+          <p className="mt-6 max-w-[520px] text-lg leading-relaxed text-on-dark">
             {t("lead")}
           </p>
 
           <div
             aria-hidden
-            className="mt-8 h-px w-30 bg-linear-to-r from-accent to-accent/20"
+            className="mt-8 h-px w-30 bg-linear-to-r from-accent-hover to-accent-hover/0"
           />
         </div>
 

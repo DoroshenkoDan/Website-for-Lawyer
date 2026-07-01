@@ -13,7 +13,7 @@ export function AllPractices() {
   const common = useTranslations("common")
 
   return (
-    <section className="bg-haze pb-20 lg:pb-28">
+    <section className="bg-haze pb-16 lg:pb-24 pt-16 lg:pt-24">
       <Container>
         <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {practices.map((p, index) => (

@@ -17,12 +17,12 @@ export function ContactCta() {
   return (
     <section className="bg-haze pb-20 lg:pb-28">
       <Container>
-        <div className="flex flex-col gap-8 rounded-[20px] border border-accent/25 bg-white px-6 py-8 sm:px-10 sm:py-10 lg:flex-row lg:items-center lg:justify-between lg:gap-10 lg:px-14 lg:py-12">
+        <div className="flex flex-col gap-8 rounded-[20px] border border-accent bg-hero px-6 py-8 sm:px-10 sm:py-10 lg:flex-row lg:items-center lg:justify-between lg:gap-10 lg:px-14 lg:py-12">
           <div className="max-w-xl">
-            <h2 className="font-heading text-2xl font-medium leading-tight tracking-tight text-graphite lg:text-[1.75rem]">
+            <h2 className="font-heading text-2xl font-medium leading-tight tracking-tight text-white lg:text-[1.75rem]">
               {t("title")}
             </h2>
-            <p className="mt-3 text-base leading-relaxed text-graphite/70">
+            <p className="mt-3 text-base leading-relaxed text-on-dark">
               {t("text")}
             </p>
           </div>
@@ -30,9 +30,9 @@ export function ContactCta() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-7 lg:shrink-0">
             <a
               href={`mailto:${email}`}
-              className="inline-flex items-center gap-2 text-base font-medium text-graphite transition-colors hover:text-accent"
+              className="inline-flex items-center gap-2 text-base font-medium text-on-dark transition-colors hover:text-accent-hover"
             >
-              <Mail className="size-4 text-accent" aria-hidden />
+              <Mail className="size-4 text-accent-hover" aria-hidden />
               {email}
             </a>
             <Link
