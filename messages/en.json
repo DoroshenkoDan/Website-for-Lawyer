@@ -204,7 +204,9 @@
   },
   "news": {
     "title": "News",
-    "subtitle": "Latest news and updates"
+    "subtitle": "Latest news and updates",
+    "lead": "Current events, commentary and practice updates. Follow key news and legal positions in high-profile cases.",
+    "readArticle": "Read article"
   },
   "contacts": {
     "title": "Contacts",

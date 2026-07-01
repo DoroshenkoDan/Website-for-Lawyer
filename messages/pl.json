@@ -204,7 +204,9 @@
   },
   "news": {
     "title": "Aktualności",
-    "subtitle": "Najnowsze wiadomości i aktualizacje"
+    "subtitle": "Najnowsze wiadomości i aktualizacje",
+    "lead": "Bieżące wydarzenia, komentarze i aktualizacje praktyki. Śledź najważniejsze wiadomości i stanowiska prawne w głośnych sprawach.",
+    "readArticle": "Czytaj artykuł"
   },
   "contacts": {
     "title": "Kontakt",
