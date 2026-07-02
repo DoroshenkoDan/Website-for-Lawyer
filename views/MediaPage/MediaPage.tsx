@@ -2,6 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl"
 import { Container } from "@/components/layout/Container"
+import { PageBanner } from "@/components/layout/PageBanner"
 import { useMedia } from "@/hooks/useMedia"
 
 export function MediaPage() {
@@ -12,6 +13,7 @@ export function MediaPage() {
 
   return (
     <>
+      <PageBanner title={t("title")} description={t("subtitle")} />
       <Container className="py-16">
         {isLoading && <p className="text-graphite/60">{tc("loading")}</p>}
         {isError && <p className="text-graphite/60">{tc("error")}</p>}

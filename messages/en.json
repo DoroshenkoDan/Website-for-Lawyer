@@ -143,14 +143,35 @@
   },
   "about": {
     "title": "About the attorney",
-    "intro": "",
+    "intro": "I, attorney Regina Huseinova, am a member of the Bar Council of the Kyiv Region. I actively practise in the field of electronic asset declarations.",
+    "imageAlt": "Regina Huseinova, attorney",
+    "bio": {
+      "specialization": "I specialise in the new anti-corruption legislation.",
+      "highlight": "I was the first in Ukraine to create an original programme of seminars for declaration filers and attorneys practising in this field.",
+      "experience": "I have extensive hands-on experience supporting full audits of the electronic declarations of category A civil servants, members of parliament, holders of political office, and heads of state and municipal enterprises and institutions.",
+      "mediationLead": "A qualified mediator.",
+      "credentials": [
+        "Mediation certificate — Ukrainian Advocacy Academy, 2013",
+        "Course “Solving problems in teams with the Adizes methodology”, 2012",
+        "Author of courses on media law and legal interaction between public authorities and the media",
+        "Academic publications: anti-corruption legislation, electronic declarations, freedom of speech, personal data protection, access to information"
+      ]
+    },
     "awards": {
       "title": "Awards",
-      "intro": ""
+      "intro": "",
+      "teaser": "Distinctions from the Kyiv Region Bar Council, the UNBA, and church honours",
+      "items": [
+        "Distinction of the Kyiv Region Bar Council “For devotion to the legal profession”",
+        "Honorary Distinction of the Ukrainian National Bar Association",
+        "Medal of St. Nicholas the Wonderworker",
+        "Order of St. Great Martyr Barbara"
+      ]
     },
     "inMemory": {
       "title": "In memory of my mother",
-      "intro": ""
+      "intro": "",
+      "teaser": "A personal tribute page"
     }
   },
   "practices": {

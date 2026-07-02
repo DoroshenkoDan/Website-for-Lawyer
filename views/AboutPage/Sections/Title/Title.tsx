@@ -11,10 +11,11 @@ import { Container } from "@/components/layout/Container"
  */
 const portrait: string | null = null
 
-/** Practices page hero: breadcrumb, title, lead and a framed portrait. */
+/** About page hero: breadcrumb, title, intro and a framed portrait. */
 export function Title() {
-  const t = useTranslations("practices")
+  const t = useTranslations("about")
   const tNav = useTranslations("nav")
+  const intro = t("intro")
 
   return (
     <section className="overflow-hidden ">
@@ -37,13 +38,15 @@ export function Title() {
             </ol>
           </nav>
 
-          <h1 className="mt-5 font-heading text-[2.75rem] font-medium leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-[5rem] xl:text-[5.5rem]">
+          <h1 className="mt-4 font-heading text-[2.5rem] font-medium leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-[4.25rem]">
             {t("title")}
           </h1>
 
-          <p className="mt-6 max-w-[520px] text-lg leading-relaxed text-on-dark">
-            {t("lead")}
-          </p>
+          {intro && (
+            <p className="mt-6 max-w-[460px] text-base leading-relaxed text-on-dark">
+              {intro}
+            </p>
+          )}
 
           <div
             aria-hidden

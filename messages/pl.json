@@ -143,14 +143,35 @@
   },
   "about": {
     "title": "O adwokacie",
-    "intro": "",
+    "intro": "Ja, adwokat Regina Huseinova, jestem członkiem Rady Adwokackiej obwodu kijowskiego. Aktywnie praktykuję w dziedzinie elektronicznych deklaracji majątkowych.",
+    "imageAlt": "Regina Huseinova, adwokat",
+    "bio": {
+      "specialization": "Specjalizuję się w nowym ustawodawstwie antykorupcyjnym.",
+      "highlight": "Jako pierwsza na Ukrainie stworzyłam autorski program seminariów dla osób składających deklaracje oraz adwokatów praktykujących w tej dziedzinie.",
+      "experience": "Mam bogate praktyczne doświadczenie w obsłudze pełnych kontroli elektronicznych deklaracji urzędników kategorii A, posłów, osób pełniących funkcje polityczne, a także kierowników przedsiębiorstw i instytucji państwowych oraz komunalnych.",
+      "mediationLead": "Wykwalifikowany mediator.",
+      "credentials": [
+        "Certyfikat mediacji — Akademia Adwokatury Ukrainy, 2013",
+        "Kurs „Rozwiązywanie problemów w zespołach metodologią Adizesa”, 2012",
+        "Autorka kursów prawa mediów oraz współdziałania organów władzy publicznej i mediów",
+        "Publikacje naukowe: ustawodawstwo antykorupcyjne, deklaracje elektroniczne, wolność słowa, ochrona danych osobowych, dostęp do informacji"
+      ]
+    },
     "awards": {
       "title": "Nagrody",
-      "intro": ""
+      "intro": "",
+      "teaser": "Wyróżnienia Rady Adwokackiej obwodu kijowskiego, NAAU oraz odznaczenia cerkiewne",
+      "items": [
+        "Wyróżnienie Rady Adwokackiej obwodu kijowskiego „Za oddanie zawodowi adwokata”",
+        "Honorowe Wyróżnienie Krajowego Stowarzyszenia Adwokatów Ukrainy",
+        "Medal św. Mikołaja Cudotwórcy",
+        "Order św. Wielkiej Męczennicy Barbary"
+      ]
     },
     "inMemory": {
       "title": "Ku pamięci mamy",
-      "intro": ""
+      "intro": "",
+      "teaser": "Osobista strona poświęcona pamięci"
     }
   },
   "practices": {

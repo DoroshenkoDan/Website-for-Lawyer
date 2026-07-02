@@ -1,11 +1,14 @@
-import { Title } from "./Sections/Title"
+import { useTranslations } from "next-intl"
+import { PageBanner } from "@/components/layout/PageBanner"
 import { AllPractices } from "./Sections/AllPractices"
 import { ContactCta } from "./Sections/ContactCta"
 
 export function PracticesPage() {
+  const t = useTranslations("practices")
+
   return (
     <>
-      <Title />
+      <PageBanner title={t("title")} description={t("lead")} />
       <AllPractices />
       <ContactCta />
     </>
