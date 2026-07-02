@@ -1,47 +1,40 @@
-"use client"
-
-import { useLocale, useTranslations } from "next-intl"
-import { Container } from "@/components/layout/Container"
+import { getTranslations } from "next-intl/server"
 import { PageBanner } from "@/components/layout/PageBanner"
-import { useMedia } from "@/hooks/useMedia"
+import { getMedia } from "@/lib/api/media"
+import { MEDIA_CATEGORIES, type MediaItem } from "@/types/media"
+import { sampleMedia } from "@/config/sampleMedia"
+import { MediaTabs } from "./Sections/MediaTabs"
 
-export function MediaPage() {
-  const t = useTranslations("media")
-  const tc = useTranslations("common")
-  const locale = useLocale()
-  const { data, isLoading, isError } = useMedia(locale)
+/**
+ * Media page. Fetches on the server so every item lands in the HTML (with a
+ * per-category <h2>) — the tab switching is a thin client island over the
+ * already-rendered panels, so the categorized content stays indexable.
+ */
+export async function MediaPage({ locale }: { locale: string }) {
+  const t = await getTranslations("media")
+
+  let items: MediaItem[] = []
+  try {
+    items = await getMedia(locale)
+  } catch {
+    // Backend not wired / unavailable — still render the structure (empty tabs).
+    items = []
+  }
+
+  // Preview the layout in dev until the backend serves categorized media.
+  if (items.length === 0 && process.env.NODE_ENV === "development") {
+    items = sampleMedia
+  }
+
+  const groups = MEDIA_CATEGORIES.map((category) => ({
+    category,
+    items: items.filter((item) => item.category === category),
+  }))
 
   return (
     <>
-      <PageBanner title={t("title")} description={t("subtitle")} />
-      <Container className="py-16">
-        {isLoading && <p className="text-graphite/60">{tc("loading")}</p>}
-        {isError && <p className="text-graphite/60">{tc("error")}</p>}
-        {data && data.length === 0 && (
-          <p className="text-graphite/60">{tc("empty")}</p>
-        )}
-        {data && data.length > 0 && (
-          <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {data.map((item) => (
-              <li
-                key={item.id}
-                className="rounded-lg border border-graphite/10 p-6 transition-colors hover:border-accent"
-              >
-                <a href={item.url} target="_blank" rel="noopener noreferrer">
-                  <h3 className="font-heading text-lg font-medium text-graphite">
-                    {item.title}
-                  </h3>
-                  {item.source && (
-                    <p className="mt-2 text-sm text-graphite/60">
-                      {item.source}
-                    </p>
-                  )}
-                </a>
-              </li>
-            ))}
-          </ul>
-        )}
-      </Container>
+      <PageBanner title={t("title")} description={t("lead")} />
+      <MediaTabs groups={groups} />
     </>
   )
 }

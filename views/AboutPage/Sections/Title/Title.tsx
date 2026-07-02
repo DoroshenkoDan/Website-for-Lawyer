@@ -19,7 +19,7 @@ export function Title() {
 
   return (
     <section className="overflow-hidden ">
-      <Container className="grid items-center gap-12 pb-16 pt-22 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pb-24 lg:pt-32">
+      <Container className="grid items-center gap-12 pb-16 pt-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pb-24 lg:pt-32">
         <div className="flex flex-col">
           <nav aria-label="breadcrumb">
             <ol className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.12em]">

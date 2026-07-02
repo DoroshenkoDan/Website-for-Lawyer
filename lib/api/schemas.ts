@@ -20,7 +20,7 @@ export const newsListSchema = z.array(newsItemSchema);
 export const mediaItemSchema = z.object({
   id: z.string(),
   title: z.string(),
-  type: z.enum(["article", "video", "interview", "publication"]),
+  category: z.enum(["tv", "radio", "print", "seminars"]),
   url: z.url(),
   source: z.string().optional(),
   thumbnail: z.url().optional(),

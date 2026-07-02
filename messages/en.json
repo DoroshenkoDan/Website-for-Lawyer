@@ -221,7 +221,14 @@
   },
   "media": {
     "title": "Media",
-    "subtitle": "Publications, interviews and talks"
+    "subtitle": "Publications, interviews and talks",
+    "lead": "Publications, interviews and appearances in the media. Commentary for the press on anti-corruption legislation, electronic declarations and high-profile cases.",
+    "categories": {
+      "tv": "Television",
+      "radio": "Radio",
+      "print": "Print media",
+      "seminars": "Seminars"
+    }
   },
   "news": {
     "title": "News",

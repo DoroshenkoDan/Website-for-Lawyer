@@ -221,7 +221,14 @@
   },
   "media": {
     "title": "Media",
-    "subtitle": "Publikacje, wywiady i wystąpienia"
+    "subtitle": "Publikacje, wywiady i wystąpienia",
+    "lead": "Publikacje, wywiady i wystąpienia w mediach. Komentarze dla prasy dotyczące ustawodawstwa antykorupcyjnego, deklaracji elektronicznych i głośnych spraw.",
+    "categories": {
+      "tv": "Telewizja",
+      "radio": "Radio",
+      "print": "Prasa",
+      "seminars": "Seminaria"
+    }
   },
   "news": {
     "title": "Aktualności",

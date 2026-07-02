@@ -1,0 +1,1 @@
+export { MediaTabs } from "./MediaTabs"
