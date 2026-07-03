@@ -1,0 +1,1 @@
+export { PracticeArticleTips } from "./PracticeArticleTips"

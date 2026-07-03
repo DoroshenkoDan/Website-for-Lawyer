@@ -184,6 +184,16 @@
       "text": "Umów się na konsultację — podpowiemy, która praktyka odpowiada Twojej sytuacji.",
       "button": "Skontaktuj się"
     },
+    "article": {
+      "cta": {
+        "title": "Potrzebujesz porady w tej sprawie?",
+        "text": "Opisz swoją sytuację — ocenię perspektywy i zaproponuję konkretny plan działania.",
+        "button": "Umów konsultację"
+      }
+    },
+    "tips": {
+      "title": "Praktyczne porady dotyczące e-deklaracji"
+    },
     "items": {
       "electronic-declarations": {
         "title": "Wypełnianie e-deklaracji i wsparcie podczas pełnych kontroli",

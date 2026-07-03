@@ -1,23 +1,20 @@
-import { useTranslations } from "next-intl"
-import { Container } from "@/components/layout/Container"
+import { PracticeArticleHero } from "./Sections/PracticeArticleHero"
+import { PracticeArticleBody } from "./Sections/PracticeArticleBody"
+import { PracticeArticleTips } from "./Sections/PracticeArticleTips"
+import { PracticeArticleCta } from "./Sections/PracticeArticleCta"
 import type { PracticeId } from "@/config/practices"
 
 /**
- * Generic skeleton for a single practice page.
- * Each practice has its own route folder, so a page can stop using this and
- * render bespoke content/sections (e.g. electronic-declarations sub-categories).
+ * A single practice page. All practices share Hero + Body + CTA; only
+ * electronic-declarations inserts the practical-tips longread before the CTA.
  */
 export function PracticeArticle({ id }: { id: PracticeId }) {
-  const t = useTranslations("practices.items")
-  const short = t(`${id}.short`)
-
   return (
     <>
-      <Container className="py-16">
-        <article className="max-w-3xl text-graphite/80">
-          {/* TODO: content for practice "{id}" */}
-        </article>
-      </Container>
+      <PracticeArticleHero id={id} />
+      <PracticeArticleBody id={id} />
+      {id === "electronic-declarations" && <PracticeArticleTips />}
+      <PracticeArticleCta />
     </>
   )
 }

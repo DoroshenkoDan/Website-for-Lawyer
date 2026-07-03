@@ -184,6 +184,16 @@
       "text": "Book a consultation — we'll help you find the practice that fits your situation.",
       "button": "Get in touch"
     },
+    "article": {
+      "cta": {
+        "title": "Need advice on this matter?",
+        "text": "Describe your situation — I'll assess the prospects and propose a concrete plan of action.",
+        "button": "Book a consultation"
+      }
+    },
+    "tips": {
+      "title": "Practical tips on electronic declaration"
+    },
     "items": {
       "electronic-declarations": {
         "title": "Electronic declarations & full audit support",
