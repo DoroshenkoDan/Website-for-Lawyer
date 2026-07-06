@@ -36,7 +36,7 @@ export function PracticeCard({
   readMoreLabel,
 }: PracticeCardProps) {
   return (
-    <article className="flex flex-col gap-6 overflow-hidden rounded-2xl bg-linear-[160deg] from-graphite from-0% to-graphite-card to-100% px-5 py-[22px] lg:p-7">
+    <article className="flex flex-col gap-6 overflow-hidden rounded-2xl bg-background px-5 py-5.5 lg:p-7">
       <div className="flex items-center gap-4 border-b border-white/10 pb-[21px]">
         <span className="font-sans text-lg font-semibold tracking-[-0.36px] text-accent">
           {number}

@@ -9,7 +9,7 @@ export function Aurora() {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(circle 100vh at 50% 120%, var(--color-accent), color-mix(in srgb, var(--color-accent-hover) 70%, transparent), var(--color-background) 100%)",
+            "radial-gradient(circle 100vh at 50% 120%, var(--color-accent-hover), color-mix(in srgb, var(--color-accent) 70%, transparent), var(--color-background) 100%)",
         }}
       />
     </div>

@@ -31,21 +31,11 @@
   },
   "home": {
     "hero": {
-      "badge": "Deklaracje elektroniczne",
-      "title": "Niezawodna ochrona w najtrudniejszych sprawach",
+      "label": "Regina Husejnowa",
+      "title": "Niezawodna ochrona w <em>najtrudniejszych</em> sprawach",
       "subtitle": "Deklaracje majątkowe, postępowania antykorupcyjne i wsparcie urzędników państwowych.",
-      "quote": "Prawo działa wtedy, gdy obok jest ktoś, kto potrafi z niego korzystać. To moja praca.",
-      "quoteAuthor": "Regina Husejnowa, adwokat",
-      "highlights": {
-        "approach": {
-          "title": "Moje podejście",
-          "text": "Każdą sprawę prowadzę osobiście - od pierwszej konsultacji do rezultatu."
-        },
-        "position": {
-          "title": "Moje stanowisko",
-          "text": "Ochrona oparta na prawie i Twoim interesie, a nie na wpływach."
-        }
-      }
+      "cta": "Skontaktuj się",
+      "footline": "Deklaracje elektroniczne · NAZK · SAP · Sądy"
     },
     "metrics": {
       "title": "W liczbach",

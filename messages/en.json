@@ -31,21 +31,11 @@
   },
   "home": {
     "hero": {
-      "badge": "Electronic declarations",
-      "title": "Reliable protection in the most complex cases",
+      "label": "Regina Guseinova",
+      "title": "Reliable protection in the <em>most complex</em> cases",
       "subtitle": "Asset declarations, anti-corruption proceedings, and support for public officials.",
-      "quote": "The law works when someone who knows how to use it is by your side. That is my job.",
-      "quoteAuthor": "Regina Guseinova, attorney",
-      "highlights": {
-        "approach": {
-          "title": "My approach",
-          "text": "I handle every case personally - from the first consultation to the result."
-        },
-        "position": {
-          "title": "My position",
-          "text": "Protection built on the law and your interest, not on influence."
-        }
-      }
+      "cta": "Get in touch",
+      "footline": "E-declarations · NACP · SAPO · Courts"
     },
     "metrics": {
       "title": "In numbers",
