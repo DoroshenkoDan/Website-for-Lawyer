@@ -1,22 +1,25 @@
 import { useTranslations } from "next-intl"
 
-/** Left hero column: the attorney's name as an eyebrow above the headline. */
 export function HeroHeadline() {
   const t = useTranslations("home.hero")
 
   return (
-    <div className="max-w-md text-center lg:max-w-none lg:text-left">
+    <div>
       <p className="text-xs font-medium uppercase tracking-[0.16em] text-grey">
         <span aria-hidden className="text-accent">
           —{" "}
         </span>
-        {t("label")}
+        {t("eyebrow")}
       </p>
-      <h1 className="mt-4 font-heading text-2xl text-white lg:mt-5 lg:text-[2.75rem] lg:leading-[1.18]">
+      {/* Name first */}
+      <h1 className="mt-4 font-heading text-3xl text-white lg:mt-5 lg:text-[3.75rem] lg:leading-[1.1]">
+        {t("label")}
+      </h1>
+      <p className="mt-4 max-w-lg font-heading text-lg text-on-dark lg:mt-5 lg:text-xl">
         {t.rich("title", {
           em: (chunks) => <em className="text-accent-hover">{chunks}</em>,
         })}
-      </h1>
+      </p>
     </div>
   )
 }

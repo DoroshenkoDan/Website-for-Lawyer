@@ -2,23 +2,22 @@ import { useTranslations } from "next-intl"
 import { ArrowRight } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 
-/** Right hero column: supporting subtitle and the primary call to action. */
 export function HeroCta() {
   const t = useTranslations("home.hero")
 
   return (
-    <div className="flex max-w-md flex-col items-center text-center lg:max-w-none lg:items-end lg:text-right">
-      <p className="max-w-[340px] text-base leading-relaxed text-grey">
+    <div className="flex flex-col items-start">
+      <p className="mt-6 max-w-100 text-base leading-relaxed text-submarine">
         {t("subtitle")}
       </p>
       <Link
         href="/contacts"
-        className="group mt-7 inline-flex items-center gap-2.5 border-b border-accent pb-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:text-accent-hover"
+        className="group mt-8 inline-flex items-center gap-2.5 rounded-lg bg-accent px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
       >
         {t("cta")}
         <ArrowRight
           aria-hidden
-          className="size-4 text-accent transition-transform duration-200 group-hover:translate-x-1"
+          className="size-4 transition-transform duration-200 group-hover:translate-x-1"
         />
       </Link>
     </div>
