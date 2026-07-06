@@ -6,9 +6,10 @@ import { Link } from "@/i18n/navigation"
 import { siteConfig } from "@/config/site"
 import { Container } from "@/components/layout/Container"
 import { LocaleSwitcher } from "@/components/layout/LocaleSwitcher"
-import { Crown, Mail } from "lucide-react"
+import { Mail } from "lucide-react"
 import { MenuButton } from "./MenuButton"
 import { HeaderMenu } from "./HeaderMenu"
+import { Seal } from "@/components/layout/PageBanner/Seal"
 
 export function Header() {
   const t = useTranslations()
@@ -22,8 +23,12 @@ export function Header() {
           href="/"
           className="flex items-center gap-2.25 font-semibold tracking-[-0.15px] text-white"
         >
-          <Crown size={19} className="shrink-0 text-accent" />
-          <span className="text-base">Регіна Гусейнова</span>
+          <Seal aria-hidden className="size-9 shrink-0 text-accent" />
+          <span className="font-heading text-sm leading-tight tracking-[0.02em] text-metrics">
+            Regina
+            <br />
+            Guseinova
+          </span>
         </Link>
 
         <div className="flex-1" />
