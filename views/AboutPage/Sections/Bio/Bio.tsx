@@ -3,12 +3,6 @@ import { ArrowRight, Award, Flower2 } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 import { Container } from "@/components/layout/Container"
 
-/**
- * About page body: an editorial biography on a light surface — a narrative
- * broken by a pull-quote and a credentials list — followed by two link cards
- * to the Awards and In-Memory sub-pages. Mirrors the homepage AboutPreview
- * treatment (light `bg-haze` section, graphite text, accent details).
- */
 export function Bio() {
   const t = useTranslations("about")
   const credentials = t.raw("bio.credentials") as string[]
@@ -27,6 +21,22 @@ export function Bio() {
 
           <p className="text-[15px] leading-[1.7] text-graphite/80">
             {t("bio.experience")}
+          </p>
+
+          <p className="mt-6 text-[15px] leading-[1.7] text-graphite/80">
+            {t("bio.practice")}
+          </p>
+
+          <p className="mt-6 text-[15px] leading-[1.7] text-graphite/80">
+            {t("bio.teaching")}
+          </p>
+
+          <p className="mt-6 text-[15px] leading-[1.7] text-graphite/80">
+            {t("bio.international")}
+          </p>
+
+          <p className="mt-6 text-[15px] leading-[1.7] text-graphite/80">
+            {t("bio.media")}
           </p>
 
           <p className="mt-6 text-[15px] leading-[1.7] text-graphite/80">

@@ -70,14 +70,14 @@
     },
     "aboutPreview": {
       "eyebrow": "O mnie",
-      "title": "Regina Husejnowa: adwokat, mediator, wykładowczyni",
-      "lead": "Adwokat skupiona na deklaracjach elektronicznych, prawie antykorupcyjnym i wsparciu urzędników państwowych. Prowadzę sprawy osobiście — od pierwszej konsultacji do rezultatu.",
-      "secondary": "Certyfikowana mediatorka, regularnie prowadzę wykłady dla sędziów i urzędników. Łączę głęboką znajomość prawa z praktycznym doświadczeniem w najtrudniejszych sprawach.",
+      "title": "Regina Husejnowa: adwokat, mediator, wykładowca",
+      "lead": "Członek Rady Adwokackiej obwodu kijowskiego. Aktywnie praktykuję w dziedzinie elektronicznych deklaracji majątkowych i prawa antykorupcyjnego — prowadzę pełne kontrole deklaracji oraz sprawy związane z korupcją.",
+      "secondary": "Wykładowca Krajowej Szkoły Sędziów i Wyższej Szkoły Adwokatury, wykwalifikowany mediator oraz ekspert ds. prawnych w telewizji i radiu. Praktykuję na Ukrainie i w Polsce.",
       "credentials": [
-        "Adwokat, członkini Krajowej Izby Adwokackiej",
-        "Certyfikowany mediator",
-        "Wykładowczyni dla sędziów i urzędników państwowych",
-        "Członkini Krajowego Stowarzyszenia Mediatorów Ukrainy"
+        "Członek Rady Adwokackiej obwodu kijowskiego",
+        "Wykładowca Krajowej Szkoły Sędziów i Wyższej Szkoły Adwokatury",
+        "Wykwalifikowany mediator, autor publikacji naukowych",
+        "Praktyka na Ukrainie i w Polsce — Kraków, Warszawa"
       ],
       "cta": "Więcej o adwokacie"
     },
@@ -136,9 +136,13 @@
     "intro": "Ja, adwokat Regina Huseinova, jestem członkiem Rady Adwokackiej obwodu kijowskiego. Aktywnie praktykuję w dziedzinie elektronicznych deklaracji majątkowych.",
     "imageAlt": "Regina Huseinova, adwokat",
     "bio": {
-      "specialization": "Specjalizuję się w nowym ustawodawstwie antykorupcyjnym.",
+      "specialization": "Specjalizuję się w ustawodawstwie antykorupcyjnym.",
       "highlight": "Jako pierwsza na Ukrainie stworzyłam autorski program seminariów dla osób składających deklaracje oraz adwokatów praktykujących w tej dziedzinie.",
       "experience": "Mam bogate praktyczne doświadczenie w obsłudze pełnych kontroli elektronicznych deklaracji urzędników kategorii A, posłów, osób pełniących funkcje polityczne, a także kierowników przedsiębiorstw i instytucji państwowych oraz komunalnych.",
+      "practice": "Udzielam konsultacji w zakresie elektronicznych deklaracji majątkowych oraz prowadzę sprawy dotyczące przestępstw korupcyjnych i przestępstw związanych z korupcją.",
+      "teaching": "Wykładowca Krajowej Szkoły Sędziów Ukrainy — przeprowadziłam ponad 20 wykładów dla ponad 400 sędziów z całego kraju. Wykładowca Wyższej Szkoły Adwokatury.",
+      "international": "Wpisana na listę regionalnej Rady Adwokackiej w Krakowie jako „prawnik zagraniczny”. W Polsce współpracuję z Kancelarią Adwokacką Leszczyńska-Wiącek Magdalena w Warszawie oraz z Kancelarią Adwokacką Pawła Webera w Krakowie.",
+      "media": "Ekspert ds. prawnych w telewizji i radiu: Inter, 1+1, Nowyj Kanał, Kanał 5, TRK Kijów, Radio Ukraińskie i inne.",
       "mediationLead": "Wykwalifikowany mediator.",
       "credentials": [
         "Certyfikat mediacji — Akademia Adwokatury Ukrainy, 2013",

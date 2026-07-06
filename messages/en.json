@@ -71,13 +71,13 @@
     "aboutPreview": {
       "eyebrow": "About me",
       "title": "Regina Guseinova: attorney, mediator, lecturer",
-      "lead": "An attorney focused on electronic declarations, anti-corruption law, and support for public officials. I handle cases personally — from the first consultation to the result.",
-      "secondary": "A certified mediator, I regularly lecture for judges and officials. I combine deep knowledge of the law with practical experience in the most complex cases.",
+      "lead": "Member of the Bar Council of the Kyiv Region. I actively practise in electronic asset declarations and anti-corruption law — supporting full declaration audits and corruption-related cases.",
+      "secondary": "Lecturer at the National School of Judges and the Higher School of Advocacy, a qualified mediator, and a legal commentator on television and radio. I practise in Ukraine and Poland.",
       "credentials": [
-        "Attorney, member of the National Bar Association",
-        "Certified mediator",
-        "Lecturer for judges and public officials",
-        "Member of the National Association of Mediators of Ukraine"
+        "Member of the Bar Council of the Kyiv Region",
+        "Lecturer at the National School of Judges and the Higher School of Advocacy",
+        "Qualified mediator and author of academic publications",
+        "Practice in Ukraine and Poland — Kraków, Warsaw"
       ],
       "cta": "More about the attorney"
     },
@@ -136,9 +136,13 @@
     "intro": "I, attorney Regina Huseinova, am a member of the Bar Council of the Kyiv Region. I actively practise in the field of electronic asset declarations.",
     "imageAlt": "Regina Huseinova, attorney",
     "bio": {
-      "specialization": "I specialise in the new anti-corruption legislation.",
+      "specialization": "I specialise in anti-corruption legislation.",
       "highlight": "I was the first in Ukraine to create an original programme of seminars for declaration filers and attorneys practising in this field.",
       "experience": "I have extensive hands-on experience supporting full audits of the electronic declarations of category A civil servants, members of parliament, holders of political office, and heads of state and municipal enterprises and institutions.",
+      "practice": "I advise on electronic asset declarations and represent clients in cases involving corruption offences and corruption-related crimes.",
+      "teaching": "Lecturer at the National School of Judges of Ukraine — I have delivered over 20 lectures to more than 400 judges from across the country. Lecturer at the Higher School of Advocacy.",
+      "international": "Registered with the regional Bar Council of Kraków as a “prawnik zagraniczny” (foreign lawyer). In Poland I cooperate with Kancelaria Adwokacka Leszczyńska-Wiącek Magdalena in Warsaw and the law office of Paweł Weber in Kraków.",
+      "media": "A legal commentator on television and radio: Inter, 1+1, Novyi Kanal, Channel 5, TRK Kyiv, Ukrainian Radio, and others.",
       "mediationLead": "A qualified mediator.",
       "credentials": [
         "Mediation certificate — Ukrainian Advocacy Academy, 2013",
