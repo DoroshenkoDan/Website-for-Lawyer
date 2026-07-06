@@ -165,7 +165,10 @@
     "inMemory": {
       "title": "Ku pamięci mamy",
       "intro": "",
-      "teaser": "Osobista strona poświęcona pamięci"
+      "teaser": "Osobista strona poświęcona pamięci",
+      "kicker": "Wywiad z archiwum",
+      "attribution": "Żanna Gusejnowa, adwokat",
+      "detailsHeading": "Więcej o Żannie Gusejnowej"
     }
   },
   "practices": {

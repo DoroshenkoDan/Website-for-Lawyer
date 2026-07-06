@@ -165,7 +165,10 @@
     "inMemory": {
       "title": "In memory of my mother",
       "intro": "",
-      "teaser": "A personal tribute page"
+      "teaser": "A personal tribute page",
+      "kicker": "An interview from the archive",
+      "attribution": "Zhanna Guseynova, advocate",
+      "detailsHeading": "More about Zhanna Guseynova"
     }
   },
   "practices": {

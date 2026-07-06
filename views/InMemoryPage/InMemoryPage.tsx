@@ -1,14 +1,13 @@
-import { useTranslations } from "next-intl"
-import { Container } from "@/components/layout/Container"
+import { TributeHero } from "./Sections/TributeHero"
+import { Interview } from "./Sections/Interview"
+import { ClosingQuote } from "./Sections/ClosingQuote"
 
 export function InMemoryPage() {
-  const t = useTranslations("about.inMemory")
-
   return (
     <>
-      <Container className="py-16">
-        {/* TODO: tribute content */}
-      </Container>
+      <TributeHero />
+      <Interview />
+      <ClosingQuote />
     </>
   )
 }

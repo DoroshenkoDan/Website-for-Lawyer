@@ -1,0 +1,1 @@
+export { TributeHero } from "./TributeHero"
