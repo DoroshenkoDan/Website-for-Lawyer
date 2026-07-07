@@ -247,6 +247,9 @@
   "contacts": {
     "title": "Kontakt",
     "subtitle": "Skontaktuj się ze mną",
+    "card": {
+      "title": "Skontaktuj się ze mną"
+    },
     "form": {
       "title": "Prośba o kontakt",
       "name": "Imię",
@@ -260,7 +263,7 @@
       "validation": {
         "nameRequired": "Podaj imię",
         "emailInvalid": "Nieprawidłowy adres e-mail",
-        "messageRequired": "Napisz wiadomość"
+        "messageToBig": "Maksymalna długość 450 znaków"
       }
     }
   },

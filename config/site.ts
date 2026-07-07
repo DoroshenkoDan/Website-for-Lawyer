@@ -11,7 +11,7 @@ export const siteConfig = {
   contacts: {
     email: "r.guseinova.lawyer@gmail.com",
     phone: "",
-    address: "",
+    address: "Золотоворітський проїзд, 3, Київ, Украина",
   },
   /** Social links (empty = falls back to "#" until provided). */
   social: {

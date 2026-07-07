@@ -3,14 +3,8 @@ import { Link } from "@/i18n/navigation"
 import { Medallion } from "./Medallion"
 
 type PageBannerProps = {
-  /** Page heading (H1). */
   title: string
-  /** Lead paragraph shown under the title. */
   description: string
-  /**
-   * Label for the current page in the breadcrumb trail (the crumb after the
-   * "Home" link). Defaults to `title` when omitted.
-   */
   breadcrumb?: string
 }
 

@@ -247,6 +247,9 @@
   "contacts": {
     "title": "Contacts",
     "subtitle": "Get in touch",
+    "card": {
+      "title": "Get in touch"
+    },
     "form": {
       "title": "Call-back request",
       "name": "Name",
@@ -260,7 +263,7 @@
       "validation": {
         "nameRequired": "Please enter your name",
         "emailInvalid": "Invalid email address",
-        "messageRequired": "Please write a message"
+        "messageToBig": "Maximum length 450 characters"
       }
     }
   },
