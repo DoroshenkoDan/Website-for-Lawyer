@@ -1,9 +1,10 @@
 import { useTranslations } from "next-intl"
-import { Crown, Mail } from "lucide-react"
+import { Mail } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 import { mainNav } from "@/config/navigation"
 import { siteConfig } from "@/config/site"
 import { FacebookIcon, LinkedinIcon, YoutubeIcon } from "./social-icons"
+import { Seal } from "@/components/layout/PageBanner/Seal"
 
 const socialLinks = [
   { Icon: FacebookIcon, href: siteConfig.social.facebook, label: "Facebook" },
@@ -24,8 +25,10 @@ export function FooterTop() {
           href="/"
           className="flex items-center gap-2.25 font-heading text-base font-semibold text-white"
         >
-          <Crown size={18} className="shrink-0 text-accent" />
-          Регіна Гусейнова
+          <Seal aria-hidden className="size-9 shrink-0 text-accent" />
+          <span className="font-heading text-sm leading-tight tracking-[0.02em] text-metrics">
+            Regina Guseinova
+          </span>
         </Link>
         <p className="max-w-70 text-sm leading-[1.6] text-grey">
           {tFooter("tagline")}

@@ -1,27 +1,23 @@
-import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import { Container } from "@/components/layout/Container";
+import { useTranslations } from "next-intl"
+import { Link } from "@/i18n/navigation"
+import { Container } from "@/components/layout/Container"
 
 const legalLinks = [
   { href: "/terms", labelKey: "terms" },
   { href: "/privacy", labelKey: "privacy" },
-] as const;
+] as const
 
 /** Bottom legal bar: copyright, legal links and the developer credit. */
 export function FooterBottom() {
-  const tFooter = useTranslations("footer");
-  const year = new Date().getFullYear();
+  const tFooter = useTranslations("footer")
+  const year = new Date().getFullYear()
 
   return (
     <div className="border-t border-white/[0.08] bg-graphite-deep">
-      {/*
-        max-md:pb-20 reserves room at the very bottom for the fixed
-        MobileContactBar (h-14 / 56px) so it never overlaps this bar on mobile.
-      */}
       <Container className="flex flex-wrap items-center justify-between gap-x-5 gap-y-2 pb-5 pt-5.25 max-md:pb-20">
         <div className="flex flex-wrap items-center gap-x-5 gap-y-1">
           <p className="text-xs leading-[19.5px] text-muted">
-            © {year} Адвокат Регіна Гусейнова. {tFooter("rights")}
+            © {year}  Law Office of Regina Guseinova. {tFooter("rights")}
           </p>
           <div className="flex items-center gap-4">
             {legalLinks.map((item) => (
@@ -40,5 +36,5 @@ export function FooterBottom() {
         </p>
       </Container>
     </div>
-  );
+  )
 }
