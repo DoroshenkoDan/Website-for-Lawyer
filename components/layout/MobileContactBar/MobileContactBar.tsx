@@ -1,14 +1,14 @@
-import { useTranslations } from "next-intl";
-import { Mail } from "lucide-react";
-import { Link } from "@/i18n/navigation";
-import { siteConfig } from "@/config/site";
+import { useTranslations } from "next-intl"
+import { Mail } from "lucide-react"
+import { Link } from "@/i18n/navigation"
+import { siteConfig } from "@/config/site"
 
 /**
  * Sticky bottom action bar — mobile only. Two full-width halves:
- * "contact us" (links to the contacts page) and a quick mail button.
+ * "Contact me" (links to the contacts page) and a quick mail button.
  */
 export function MobileContactBar() {
-  const t = useTranslations("header");
+  const t = useTranslations("header")
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 flex md:hidden">
@@ -29,5 +29,5 @@ export function MobileContactBar() {
         </a>
       )}
     </div>
-  );
+  )
 }
