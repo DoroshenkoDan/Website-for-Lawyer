@@ -6,7 +6,6 @@ import { Inter, Lora } from "next/font/google"
 import { routing } from "@/i18n/routing"
 import { siteConfig } from "@/config/site"
 import { attorneyJsonLd } from "@/lib/jsonld"
-import { Providers } from "@/components/providers/Providers"
 import { Aurora } from "@/components/layout/Aurora"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
@@ -74,13 +73,11 @@ export default async function LocaleLayout({
           }}
         />
         <NextIntlClientProvider>
-          <Providers>
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-            <MobileContactBar />
-            <BookButton />
-          </Providers>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <MobileContactBar />
+          <BookButton />
         </NextIntlClientProvider>
       </body>
     </html>

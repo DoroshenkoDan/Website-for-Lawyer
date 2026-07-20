@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils"
 
 interface NewsCardProps {
   href: string
-  category: string
+  category?: string
   date: string
   title: string
   excerpt: string
@@ -48,10 +48,14 @@ export function NewsCard({
 
       <div className="flex flex-1 flex-col gap-2.5 p-5">
         <div className="flex flex-wrap items-center gap-x-1.5 text-xs">
-          <span className="font-medium text-accent">{category}</span>
-          <span className="text-graphite/30" aria-hidden>
-            ·
-          </span>
+          {category && (
+            <>
+              <span className="font-medium text-accent">{category}</span>
+              <span className="text-graphite/30" aria-hidden>
+                ·
+              </span>
+            </>
+          )}
           <span className="text-graphite/55">{date}</span>
         </div>
 

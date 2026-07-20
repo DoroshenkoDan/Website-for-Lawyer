@@ -1,7 +1,5 @@
 import type { NewsItem } from "@/types/news";
 
-export const MOCK_NEWS_DELAY_MS = 3000;
-
 interface LocalizedCopy {
   title: string;
   excerpt: string;
@@ -162,16 +160,23 @@ const articles: MockArticle[] = [
   },
 ];
 
+function toNewsItem(article: MockArticle, locale: string): NewsItem {
+  const copy = article.copy[locale] ?? article.copy.uk;
+  return {
+    id: article.id,
+    slug: article.slug,
+    title: copy.title,
+    excerpt: copy.excerpt,
+    coverImage: article.coverImage ?? undefined,
+    publishedAt: article.publishedAt,
+  };
+}
+
 export function getMockNews(locale: string): NewsItem[] {
-  return articles.map((article) => {
-    const copy = article.copy[locale] ?? article.copy.uk;
-    return {
-      id: article.id,
-      slug: article.slug,
-      title: copy.title,
-      excerpt: copy.excerpt,
-      coverImage: article.coverImage ?? undefined,
-      publishedAt: article.publishedAt,
-    };
-  });
+  return articles.map((article) => toNewsItem(article, locale));
+}
+
+export function getMockNewsBySlug(slug: string, locale: string): NewsItem | null {
+  const article = articles.find((item) => item.slug === slug);
+  return article ? toNewsItem(article, locale) : null;
 }

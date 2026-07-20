@@ -1,26 +1,22 @@
-"use client"
-
-import { useLocale, useTranslations } from "next-intl"
+import { getLocale, getTranslations } from "next-intl/server"
 import { ArrowRight } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 import { Container } from "@/components/layout/Container"
 import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { formatArticleDate } from "@/lib/formatDate"
+import { readLatestNews } from "@/lib/api/read"
 import { NewsCard } from "./NewsCard"
-import { NewsCardSkeleton } from "./NewsCardSkeleton"
-import { useFeaturedNews } from "./useFeaturedNews"
 
 const TRACK_CLASS =
   "mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:pb-0"
 
 const CARD_CLASS = "shrink-0 basis-[85%] snap-start sm:basis-[48%] lg:basis-auto"
 
-export function NewsPreview() {
-  const t = useTranslations("home.newsPreview")
-  const common = useTranslations("common")
-  const locale = useLocale()
-  const { data, isLoading, isError } = useFeaturedNews()
+export async function NewsPreview() {
+  const t = await getTranslations("home.newsPreview")
+  const locale = await getLocale()
+  const items = await readLatestNews(3)
 
   const viewAllLink = (className?: string) => (
     <Link
@@ -49,27 +45,20 @@ export function NewsPreview() {
 
         <hr className="mt-7 border-graphite/10" />
 
-        {isError ? (
-          <p className="mt-8 text-graphite/60">{common("error")}</p>
-        ) : (
+        {items.length > 0 && (
           <div className={TRACK_CLASS}>
-            {isLoading
-              ? Array.from({ length: 3 }).map((_, index) => (
-                  <NewsCardSkeleton key={index} className={CARD_CLASS} />
-                ))
-              : data.map((article) => (
-                  <NewsCard
-                    key={article.id}
-                    className={CARD_CLASS}
-                    href={`/news/${article.slug}`}
-                    category={article.category}
-                    date={formatArticleDate(article.publishedAt, locale)}
-                    title={article.title}
-                    excerpt={article.excerpt}
-                    image={article.coverImage}
-                    readLabel={t("read")}
-                  />
-                ))}
+            {items.map((item) => (
+              <NewsCard
+                key={item.id}
+                className={CARD_CLASS}
+                href={`/news/${item.slug}`}
+                date={formatArticleDate(item.publishedAt, locale)}
+                title={item.title}
+                excerpt={item.excerpt}
+                image={item.coverImage ?? null}
+                readLabel={t("read")}
+              />
+            ))}
           </div>
         )}
 
