@@ -16,7 +16,7 @@ export function HeroVideo() {
       if (media.matches) {
         video.pause()
       } else {
-        void video.play().catch(() => {})
+        void video.play().catch(() => { })
       }
     }
 
@@ -35,8 +35,8 @@ export function HeroVideo() {
       aria-hidden
       className="absolute inset-0 size-full object-cover"
     >
-      <source src="/HomePage/reginaLawyer.webm" type="video/webm" />
-      <source src="/HomePage/reginaLawyer.mp4" type="video/mp4" />
+      <source src="/images/HomePage/reginaLawyer.webm" type="video/webm" />
+      <source src="/images/HomePage/reginaLawyer.mp4" type="video/mp4" />
     </video>
   )
 }

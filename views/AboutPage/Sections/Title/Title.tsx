@@ -4,14 +4,8 @@ import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/navigation"
 import { Container } from "@/components/layout/Container"
 
-/**
- * Portrait shown inside the framed photo. `null` renders a placeholder — drop a
- * path under `public/` here once the asset is ready; the frame keeps its size,
- * so no layout change is needed.
- */
-const portrait: string | null = null
+const portrait: string | null = "/images/AboutPage/AboutRegina.webp"
 
-/** About page hero: breadcrumb, title, intro and a framed portrait. */
 export function Title() {
   const t = useTranslations("about")
   const tNav = useTranslations("nav")
@@ -55,7 +49,6 @@ export function Title() {
         </div>
 
         <div className="relative mx-auto w-full max-w-sm lg:mx-0 lg:ml-auto">
-          {/* Offset accent frame peeking behind the photo */}
           <div
             aria-hidden
             className="absolute inset-0 -translate-x-4 -translate-y-4 rounded-2xl border border-accent/40"

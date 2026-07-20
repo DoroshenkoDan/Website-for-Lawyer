@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-const PORTRAIT = "/law.avif"
+const PORTRAIT = "/images/ContactPage/ContactColor.webp"
 
 export function PhotoCover() {
 	return (
@@ -13,7 +13,7 @@ export function PhotoCover() {
 				className="hidden object-cover object-left lg:block"
 			/>
 
-			<div className="absolute inset-0 hidden bg-linear-to-l from-hero via-hero/50 to-transparent lg:block" />
+			<div className="absolute inset-0 hidden bg-linear-to-l from-hero via-hero/10 to-transparent lg:block" />
 		</div>
 	)
 }
