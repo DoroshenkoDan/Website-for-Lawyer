@@ -8,7 +8,6 @@ import { ArticleCardSkeleton } from "./ArticleCardSkeleton"
 
 const LIST_CLASS = "flex flex-col gap-10"
 
-/** The news list: fetches the localized list and handles loading/error/empty. */
 export function NewsList() {
   const t = useTranslations("news")
   const tc = useTranslations("common")

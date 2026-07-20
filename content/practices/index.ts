@@ -9,12 +9,6 @@ import { civilLaw } from "./civil-law"
 import { criminalLaw } from "./criminal-law"
 import { electronicDeclarations } from "./electronic-declarations"
 
-/**
- * Rich content for practice pages. Add an entry per practice as real copy
- * arrives (uk provided by the client, en/pl translated). Pages fall back to
- * the localized `short` message + a placeholder photo when a practice has no
- * entry yet, so all 8 pages render before content is authored.
- */
 const practiceContent: Partial<Record<PracticeId, PracticeContent>> = {
   "electronic-declarations": electronicDeclarations,
   "anti-corruption": antiCorruption,

@@ -7,7 +7,6 @@ export function AwardsPage() {
   return (
     <>
       <Container className="py-16">
-        {/* TODO: awards list */}
       </Container>
     </>
   )

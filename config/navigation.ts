@@ -1,7 +1,3 @@
-/**
- * Primary navigation. `labelKey` resolves under the `nav` message namespace.
- * `href` is locale-agnostic — the i18n `<Link>` prefixes the locale.
- */
 export interface NavItem {
   labelKey: string;
   href: string;

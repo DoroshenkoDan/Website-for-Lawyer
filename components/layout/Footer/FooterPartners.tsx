@@ -2,7 +2,6 @@ import { useTranslations } from "next-intl";
 import { Fragment } from "react";
 import { siteConfig } from "@/config/site";
 
-/** Partner associations row, separated by middots. */
 export function FooterPartners() {
   const tFooter = useTranslations("footer");
 

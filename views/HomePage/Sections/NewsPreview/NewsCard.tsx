@@ -14,7 +14,6 @@ interface NewsCardProps {
   className?: string
 }
 
-/** A single article card: cover, category · date, title, excerpt, read link. */
 export function NewsCard({
   href,
   category,

@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 
-/** Centered, max-width page container with horizontal padding. */
 export function Container({
   className,
   children,

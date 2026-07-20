@@ -6,11 +6,6 @@ function localizedPath(locale: string, path: string) {
   return `${prefix}${path}` || "/";
 }
 
-/**
- * Build per-page metadata with localized title/description and hreflang
- * alternates for all locales. `path` is the locale-agnostic pathname
- * (e.g. "/practices"), "" for the home page.
- */
 export function buildPageMetadata({
   locale,
   title,

@@ -1,10 +1,5 @@
 import Image from "next/image"
 
-/**
- * A portrait breaking out of the reading column, paired with a pull-quote
- * drawn from the interview. `flip` swaps which side the portrait sits on so
- * the two figures on the page mirror each other.
- */
 export function Figure({
   image,
   alt,

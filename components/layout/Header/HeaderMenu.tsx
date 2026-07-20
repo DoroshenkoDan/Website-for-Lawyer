@@ -14,12 +14,6 @@ interface HeaderMenuProps {
   onClose: () => void
 }
 
-/**
- * Expanding navigation menu that grows the header card downward.
- * Uses the `grid-rows-[0fr]→[1fr]` technique so the card animates to its
- * natural height. Holds the primary navigation, plus — on small screens —
- * the header utilities that are hidden from the bar.
- */
 export function HeaderMenu({ open, onClose }: HeaderMenuProps) {
   const t = useTranslations()
   const pathname = usePathname()
@@ -77,7 +71,6 @@ export function HeaderMenu({ open, onClose }: HeaderMenuProps) {
             })}
           </nav>
 
-          {/* Utilities — only shown here on small screens (in the bar otherwise) */}
           <div
             className="mt-2 flex flex-col gap-4 border-t border-white/10 pt-5 md:hidden"
             onClick={onClose}

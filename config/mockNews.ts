@@ -1,14 +1,5 @@
-/**
- * TEMPORARY mock news source with an artificial delay, so the News page can be
- * previewed (skeletons → cards) before the backend is live.
- *
- * Remove this file and restore the real fetch in `hooks/useNews.ts`
- * (`/api/news`) once the API is wired. Shape mirrors `NewsItem` (`types/news`),
- * so the swap is a drop-in change.
- */
 import type { NewsItem } from "@/types/news";
 
-/** How long the fake fetch "loads" before resolving. */
 export const MOCK_NEWS_DELAY_MS = 3000;
 
 interface LocalizedCopy {
@@ -19,11 +10,8 @@ interface LocalizedCopy {
 interface MockArticle {
   id: string;
   slug: string;
-  /** ISO publish date; formatted per-locale at render time. */
   publishedAt: string;
-  /** Cover image path under `public/`; `null` renders a placeholder. */
   coverImage: string | null;
-  /** Copy per locale; `uk` is the fallback. */
   copy: Record<string, LocalizedCopy>;
 }
 
@@ -174,7 +162,6 @@ const articles: MockArticle[] = [
   },
 ];
 
-/** Assemble the localized mock list in `NewsItem` shape. */
 export function getMockNews(locale: string): NewsItem[] {
   return articles.map((article) => {
     const copy = article.copy[locale] ?? article.copy.uk;

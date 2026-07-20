@@ -3,28 +3,16 @@ import { ImageIcon } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 
 export interface PracticeCardProps {
-  /** Display order, pre-formatted (e.g. "01"). */
   number: string
-  /** Short practice name shown in the card header. */
   name: string
-  /** Marketing hook headline (H3). */
   question: string
-  /** One-line tagline under the headline. */
   tagline: string
-  /** Supporting paragraph. */
   description: string
-  /** Link to the practice page. */
   href: string
-  /** Thumbnail path; `null` renders a placeholder. */
   image: string | null
-  /** Localised "read more" link label. */
   readMoreLabel: string
 }
 
-/**
- * A single featured practice on the homepage. Stacks vertically on mobile and
- * lays out as `[thumbnail | headline | description]` columns from `lg` up.
- */
 export function PracticeCard({
   number,
   name,

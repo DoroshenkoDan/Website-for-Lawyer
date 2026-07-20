@@ -3,7 +3,6 @@ import { cn } from "@/lib/utils"
 
 const rad = (deg: number) => (deg * Math.PI) / 180
 
-/* Seal-style engraving geometry */
 const SPOKES = Array.from({ length: 16 }, (_, i) => {
   const a = rad(i * 22.5)
   return {
@@ -32,17 +31,14 @@ const DOTS = Array.from({ length: 24 }, (_, i) => {
   }
 })
 
-/** RG medallion */
 export function Medallion({ className }: { className?: string }) {
   return (
     <div className={cn("relative size-80", className)}>
-      {/* Revolving seal */}
       <Seal
         aria-hidden
         className="absolute inset-0 h-full w-full animate-[spin_90s_linear_infinite] text-muted/60 motion-reduce:animate-none"
       />
 
-      {/* Orbiting dot */}
       <div
         aria-hidden
         className="absolute inset-0.5 animate-[spin_24s_linear_infinite] motion-reduce:animate-none"
@@ -50,13 +46,11 @@ export function Medallion({ className }: { className?: string }) {
         <div className="absolute left-1/2 top-0 size-1.5 -translate-x-1/2 rounded-full bg-accent-hover" />
       </div>
 
-      {/* Inner disc */}
       <div className="absolute inset-[10%] rounded-full border border-accent/55  p-1.5 shadow-[0_30px_60px_rgba(22,25,26,0.6)]">
         <div
           aria-hidden
           className="relative h-full w-full overflow-hidden rounded-full bg-background"
         >
-          {/* Engraving + monogram */}
           <svg
             viewBox="0 0 400 400"
             className="absolute inset-0 h-full w-full text-muted/50"

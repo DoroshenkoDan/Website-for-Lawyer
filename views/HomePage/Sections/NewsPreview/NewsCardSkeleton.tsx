@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils"
 
-/** Loading placeholder matching `NewsCard`'s layout. Shown while news loads. */
 export function NewsCardSkeleton({ className }: { className?: string }) {
   return (
     <div

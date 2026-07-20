@@ -6,10 +6,6 @@ import { buttonVariants } from "@/components/ui/button"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 
-/**
- * Closing CTA shared by every practice page. A full-width dark band, centered,
- * with an accent glow — the visual bookend to the dark title band up top.
- */
 export function PracticeArticleCta() {
   const t = useTranslations("practices.article.cta")
   const { email } = siteConfig.contacts

@@ -1,10 +1,5 @@
 import type { MediaItem } from "@/types/media";
 
-/**
- * Temporary sample media, shown ONLY in development until the backend serves
- * categorized items (see MediaPage). Safe to delete once `/media` returns real
- * data. Titles are Ukrainian placeholders for previewing the layout.
- */
 export const sampleMedia: MediaItem[] = [
   {
     id: "tv-1",

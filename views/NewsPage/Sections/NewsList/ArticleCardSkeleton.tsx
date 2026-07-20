@@ -1,4 +1,3 @@
-/** Loading placeholder matching `ArticleCard`'s layout. Shown while news loads. */
 export function ArticleCardSkeleton() {
   return (
     <div className="flex flex-col border-b border-accent pb-10" aria-hidden>

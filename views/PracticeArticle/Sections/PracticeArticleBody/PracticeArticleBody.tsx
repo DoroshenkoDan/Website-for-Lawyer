@@ -6,10 +6,6 @@ import { RichContent } from "@/components/RichContent"
 import { getPracticeContent } from "@/content/practices"
 import type { PracticeId } from "@/config/practices"
 
-/**
- * Light photo | text body. Photo falls back to a placeholder, body falls back
- * to the localized `short` string, so pages render before real content exists.
- */
 export function PracticeArticleBody({ id }: { id: PracticeId }) {
   const locale = useLocale() as Loc
   const t = useTranslations("practices.items")

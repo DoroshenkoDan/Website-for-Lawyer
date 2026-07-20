@@ -2,11 +2,6 @@ import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 
-/**
- * Floating "book a consultation" CTA — tablet/desktop only.
- * Counterpart to the mobile sticky contact bar (which is `md:hidden`),
- * so the two never appear together.
- */
 export function BookButton() {
   const t = useTranslations("header");
 

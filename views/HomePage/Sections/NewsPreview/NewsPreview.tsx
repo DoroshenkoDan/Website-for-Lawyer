@@ -11,10 +11,6 @@ import { NewsCard } from "./NewsCard"
 import { NewsCardSkeleton } from "./NewsCardSkeleton"
 import { useFeaturedNews } from "./useFeaturedNews"
 
-/**
- * Below `lg` the cards become a swipeable scroll-snap slider; from `lg` they
- * lay out as a 3-up grid. One element, CSS-only — no carousel dependency.
- */
 const TRACK_CLASS =
   "mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:pb-0"
 

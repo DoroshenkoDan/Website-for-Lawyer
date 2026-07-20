@@ -8,7 +8,6 @@ type PageBannerProps = {
   breadcrumb?: string
 }
 
-/** Reusable page banner */
 export function PageBanner({
   title,
   description,
@@ -21,16 +20,13 @@ export function PageBanner({
       <div className="mx-auto w-full max-w-[1440px] overflow-x-clip px-4 sm:px-6 lg:px-8">
         <div className="relative">
           <div className="relative flex h-[300px] items-center overflow-hidden rounded-3xl bg-linear-to-br from-hero to-graphite-deep sm:h-[380px]">
-            {/* Tone lift */}
             <div aria-hidden className="absolute inset-0 bg-white/6" />
 
-            {/* Accent glow */}
             <div
               aria-hidden
               className="absolute right-0 top-1/2 size-105 -translate-y-1/2 translate-x-1/3 rounded-full bg-accent/20 blur-[100px] lg:size-140"
             />
 
-            {/* Vignette */}
             <div
               aria-hidden
               className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(0,0,0,0.4)_100%)]"
@@ -69,7 +65,6 @@ export function PageBanner({
             </div>
           </div>
 
-          {/* Medallion above the card, overflowing its edge */}
           <Medallion className="pointer-events-none absolute right-2 top-1/2 z-10 hidden size-85 -translate-y-1/2 select-none sm:block lg:right-6" />
         </div>
       </div>

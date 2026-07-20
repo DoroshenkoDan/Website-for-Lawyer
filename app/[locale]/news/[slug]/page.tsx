@@ -7,8 +7,6 @@ export default async function Page({ params }: Props) {
   const { locale, slug } = await params
   setRequestLocale(locale as Loc)
 
-  // TODO: fetch the article via `getNewsBySlug(slug, locale)` from lib/api/news
-  // once the backend endpoint is confirmed, then render its content + metadata.
   return (
     <>
       <Container className="py-16">

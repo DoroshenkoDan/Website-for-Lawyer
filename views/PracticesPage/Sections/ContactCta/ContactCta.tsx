@@ -6,10 +6,6 @@ import { buttonVariants } from "@/components/ui/button"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 
-/**
- * Closing call-to-action banner on the practices page. The "Зв'язатися" button
- * is the page's primary accent CTA; the email is a quieter secondary link.
- */
 export function ContactCta() {
   const t = useTranslations("practices.cta")
   const { email } = siteConfig.contacts

@@ -7,11 +7,6 @@ import { cn } from "@/lib/utils"
 import type { MediaCategory, MediaGroup } from "@/types/media"
 import { MediaCard } from "./MediaCard"
 
-/**
- * Client island over the server-rendered category panels. All panels stay in
- * the DOM (inactive ones just get `hidden`), so switching tabs is instant and
- * the content remains fully indexable.
- */
 export function MediaTabs({ groups }: { groups: MediaGroup[] }) {
   const t = useTranslations("media")
   const tc = useTranslations("common")

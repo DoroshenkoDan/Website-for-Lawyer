@@ -1,6 +1,5 @@
 import { siteConfig } from "@/config/site";
 
-/** Structured data describing the attorney (schema.org/Attorney). */
 export function attorneyJsonLd(locale: string) {
   return {
     "@context": "https://schema.org",

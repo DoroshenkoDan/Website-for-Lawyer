@@ -21,7 +21,6 @@ export function Hero() {
             className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-t from-hero/85 to-transparent"
           />
 
-          {/* Text column tracks the frame itself, not the page container */}
           <div className="relative z-10 flex flex-1 flex-col justify-center px-6 py-12 sm:px-10 lg:px-16">
             <div className="max-w-xl">
               <HeroHeadline />
@@ -29,7 +28,6 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Practice areas footline */}
           <p className="relative z-10 px-6 pb-7 text-center text-xs uppercase tracking-[0.16em] text-metrics">
             {t("footline")}
           </p>

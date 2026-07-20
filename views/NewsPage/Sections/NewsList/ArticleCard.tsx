@@ -12,11 +12,6 @@ interface ArticleCardProps {
   readLabel: string
 }
 
-/**
- * News-page article entry: a small cover top-left, then the title, excerpt and
- * a "read article" button spanning the full container width, divided from the
- * next by a bottom border. Rendered one-per-row in a single column.
- */
 export function ArticleCard({
   href,
   title,

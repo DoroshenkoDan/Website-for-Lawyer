@@ -1,9 +1,5 @@
 import type { Tip } from "@/types/practices"
 
-/**
- * Practical tips shown on the electronic-declarations page (uk from the client,
- * en/pl translated). Each id is a stable slug used as the accordion anchor.
- */
 export const declarationTips: Tip[] = [
   {
     id: "family-members",

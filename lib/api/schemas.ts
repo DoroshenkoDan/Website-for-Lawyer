@@ -1,11 +1,5 @@
 import { z } from "zod";
 
-/**
- * Response/request shapes for the backend.
- * TODO: align these with the real API once the contract is known —
- * this is the single place to adjust when the backend type is confirmed.
- */
-
 export const newsItemSchema = z.object({
   id: z.string(),
   slug: z.string(),

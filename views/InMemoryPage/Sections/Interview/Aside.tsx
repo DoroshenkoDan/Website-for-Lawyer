@@ -1,6 +1,5 @@
 import { COLUMN } from "./column"
 
-/** A short highlighted line pulled from the conversation. */
 export function Aside({ text }: { text: string }) {
   return (
     <blockquote

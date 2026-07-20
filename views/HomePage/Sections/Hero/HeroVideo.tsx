@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react"
 
-/** Background video */
 export function HeroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null)
 
@@ -10,7 +9,6 @@ export function HeroVideo() {
     const video = videoRef.current
     if (!video) return
 
-    // Reduced motion
     const media = window.matchMedia("(prefers-reduced-motion: reduce)")
     const sync = () => {
       if (media.matches) {

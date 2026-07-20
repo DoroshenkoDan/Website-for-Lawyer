@@ -17,7 +17,6 @@ export function Header() {
 
   return (
     <header className="fixed top-4 left-5 z-50 w-[calc(100%-40px)] overflow-hidden rounded-2xl bg-header/60 text-on-dark backdrop-blur-md">
-      {/* Top bar */}
       <Container className="flex h-18 items-center gap-4">
         <Link
           href="/"
@@ -59,7 +58,6 @@ export function Header() {
         <MenuButton open={open} onToggle={() => setOpen((v) => !v)} />
       </Container>
 
-      {/* Expanding menu */}
       <HeaderMenu open={open} onClose={() => setOpen(false)} />
     </header>
   )

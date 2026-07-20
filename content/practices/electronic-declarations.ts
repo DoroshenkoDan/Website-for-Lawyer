@@ -1,10 +1,5 @@
 import type { PracticeContent } from "@/types/practices"
 
-/**
- * Electronic-declarations practice body (the practical-tips longread is added
- * separately by the PracticeArticleTips section). Prose. Emphasis (`**…**`) is
- * restrained — one key phrase per paragraph.
- */
 export const electronicDeclarations: PracticeContent = {
   body: {
     uk: [

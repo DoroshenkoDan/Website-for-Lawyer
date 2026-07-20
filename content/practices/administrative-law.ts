@@ -1,9 +1,5 @@
 import type { PracticeContent } from "@/types/practices"
 
-/**
- * Administrative-law practice body. A short flat services list (no grouping
- * needed). Emphasis (`**…**`) is restrained — one key phrase per item.
- */
 export const administrativeLaw: PracticeContent = {
   body: {
     uk: [

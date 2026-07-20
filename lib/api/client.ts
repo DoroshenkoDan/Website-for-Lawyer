@@ -11,17 +11,11 @@ export class ApiError extends Error {
   }
 }
 
-/**
- * Low-level fetch wrapper for the existing backend.
- * Runs server-side only; injects auth and base URL.
- * Callers validate the returned JSON with a zod schema.
- */
 export async function apiFetch(
   path: string,
   init: RequestInit = {},
 ): Promise<unknown> {
   if (!apiConfig.baseUrl) {
-    // Backend not wired yet — surface a clear error the proxy can translate.
     throw new ApiError(500, "API_BASE_URL is not configured");
   }
 

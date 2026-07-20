@@ -3,7 +3,6 @@ import { ArrowUpRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { expertiseLectures } from "@/config/expertise"
 
-/** Left column: seminars and lectures, each linking out to its source. */
 export function LectureList() {
   const t = useTranslations("home.expertise.lectures")
 

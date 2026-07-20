@@ -4,13 +4,11 @@ import { tribute } from "@/content/inMemory"
 import { COLUMN } from "./column"
 import { Segment } from "./Segment"
 
-
 export function Interview() {
   const locale = useLocale() as Loc
   const t = useTranslations("about.inMemory")
   const segments = tribute.interview[locale]
 
-  // Alternate the side each portrait sits on as they appear down the page.
   let figureCount = 0
 
   return (

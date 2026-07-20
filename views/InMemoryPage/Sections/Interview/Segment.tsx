@@ -5,13 +5,11 @@ import { Lead } from "./Lead"
 import { Paragraph } from "./Paragraph"
 import { Aside } from "./Aside"
 
-/** Renders one interview segment by its kind. */
 export function Segment({
   segment,
   flip,
 }: {
   segment: TributeSegment
-  /** For `figure` segments: which side the portrait sits on. */
   flip: boolean
 }) {
   switch (segment.type) {

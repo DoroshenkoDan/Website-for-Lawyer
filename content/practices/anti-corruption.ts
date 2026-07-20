@@ -1,10 +1,5 @@
 import type { PracticeContent } from "@/types/practices"
 
-/**
- * Anti-corruption practice body. Grouped services list: an intro paragraph
- * then five subheaded groups. Emphasis (`**…**`) is restrained — key bodies,
- * laws and registers only.
- */
 export const antiCorruption: PracticeContent = {
   body: {
     uk: [

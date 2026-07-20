@@ -4,12 +4,6 @@ const HERO_IMAGE = "/inMemory/zhanna_guseinova_advokat1-768x504.webp"
 const FIGURE_HEARING = "/inMemory/zhanna_guseinova_advokat3.webp"
 const FIGURE_YOUTH = "/inMemory/zhanna_guseinova_advokat4.webp"
 
-/**
- * Full tribute long-read for the "In memory" page: a translated archival
- * interview with the advocate Zhanna Guseynova. The source was in Russian;
- * rendered here in Ukrainian, English and Polish. Segments render in order,
- * with two portraits (hearing / youth) breaking up the Q&A as pull-quotes.
- */
 export const tribute: TributeContent = {
   heroImage: HERO_IMAGE,
   heroQuote: {

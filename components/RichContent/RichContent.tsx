@@ -1,11 +1,6 @@
 import type { Block } from "@/types/practices"
 import { cn } from "@/lib/utils"
 
-/**
- * Split text into runs, marking `**…**` spans as emphasized. `String.split`
- * with a capture group interleaves captured groups at odd indices.
- * "a **b** c" -> [{a }, {b*}, { c}].
- */
 export function parseEmphasis(
   text: string,
 ): Array<{ text: string; emphasis: boolean }> {
@@ -15,7 +10,6 @@ export function parseEmphasis(
     .filter((run) => run.text.length > 0)
 }
 
-/** Inline text with `**…**` rendered in the accent color (not bold). */
 function Inline({ text }: { text: string }) {
   return (
     <>
@@ -32,11 +26,6 @@ function Inline({ text }: { text: string }) {
   )
 }
 
-/**
- * Renders an array of rich content blocks. Shared by the practice hero body
- * and the practical tips. Subheadings render as <h4> (correct under an <h3>
- * tip title; acceptable under the hero <h1>).
- */
 export function RichContent({
   blocks,
   className,

@@ -5,20 +5,12 @@ import { Play } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface VideoEmbedProps {
-  /** YouTube video id (the `v=` value). */
   youtubeId: string
-  /** Caption used for the iframe title and the play-button label. */
   title: string
-  /** Localised verb for the accessible play label, e.g. "Play video". */
   playLabel: string
   className?: string
 }
 
-/**
- * Lazy YouTube facade: shows the video thumbnail with a play button, and only
- * mounts the (autoplaying) privacy-friendly iframe once the user clicks. Keeps
- * the homepage light — no YouTube scripts load until a video is requested.
- */
 export function VideoEmbed({ youtubeId, title, playLabel, className }: VideoEmbedProps) {
   const [playing, setPlaying] = useState(false)
 

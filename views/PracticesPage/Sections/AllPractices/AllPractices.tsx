@@ -3,11 +3,6 @@ import { Container } from "@/components/layout/Container"
 import { practices } from "@/config/practices"
 import { PracticeCard } from "./PracticeCard"
 
-/**
- * The full grid of practice areas. Driven by `config/practices` (the areas we
- * actually offer) — title and description come from `practices.items.<id>`,
- * numbering follows the config order.
- */
 export function AllPractices() {
   const ti = useTranslations("practices.items")
   const common = useTranslations("common")

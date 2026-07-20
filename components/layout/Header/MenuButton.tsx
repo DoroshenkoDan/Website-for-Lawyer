@@ -7,7 +7,6 @@ interface MenuButtonProps {
   onToggle: () => void
 }
 
-/** Burger button that morphs between burger and "X". */
 export function MenuButton({ open, onToggle }: MenuButtonProps) {
   const t = useTranslations()
 

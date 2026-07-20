@@ -1,7 +1,6 @@
 import { useFormatter } from "next-intl"
 import type { MediaItem } from "@/types/media"
 
-/** A single media coverage card: title link with source and date. */
 export function MediaCard({ item }: { item: MediaItem }) {
   const format = useFormatter()
 

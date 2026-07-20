@@ -1,9 +1,5 @@
 import type { PracticeContent } from "@/types/practices"
 
-/**
- * Mediation practice body. Prose: definition + the two mediation types
- * (family, corporate). Emphasis (`**…**`) anchors each paragraph — one phrase.
- */
 export const mediation: PracticeContent = {
   body: {
     uk: [

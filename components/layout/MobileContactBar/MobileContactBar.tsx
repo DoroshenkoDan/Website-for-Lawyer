@@ -3,10 +3,6 @@ import { Mail } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 import { siteConfig } from "@/config/site"
 
-/**
- * Sticky bottom action bar — mobile only. Two full-width halves:
- * "Contact me" (links to the contacts page) and a quick mail button.
- */
 export function MobileContactBar() {
   const t = useTranslations("header")
 

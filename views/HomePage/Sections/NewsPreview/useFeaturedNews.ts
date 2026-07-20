@@ -9,9 +9,7 @@ export interface FeaturedNewsItem {
   category: string
   title: string
   excerpt: string
-  /** ISO publish date. */
   publishedAt: string
-  /** Cover image path or `null` for a placeholder. */
   coverImage: string | null
 }
 
@@ -21,14 +19,6 @@ interface FeaturedNewsResult {
   isError: boolean
 }
 
-/**
- * Source for the homepage news preview.
- *
- * Currently assembled synchronously from static config + i18n copy, so
- * `isLoading`/`isError` are constant. The component already renders skeletons
- * on `isLoading` — when the backend is ready, swap the body for a react-query
- * fetch of `/api/news` (latest 3) and the loading UI works unchanged.
- */
 export function useFeaturedNews(): FeaturedNewsResult {
   const t = useTranslations("home.newsPreview.articles")
 

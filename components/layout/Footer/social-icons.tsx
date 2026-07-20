@@ -1,9 +1,5 @@
 import type { SVGProps } from "react";
 
-/**
- * Brand glyphs for the footer socials. lucide-react no longer ships brand
- * icons, so these are local inline SVGs (single path, `currentColor`).
- */
 type IconProps = SVGProps<SVGSVGElement> & { size?: number };
 
 function BrandIcon({ size = 18, children, ...props }: IconProps & { children: React.ReactNode }) {

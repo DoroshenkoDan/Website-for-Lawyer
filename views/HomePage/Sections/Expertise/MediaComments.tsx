@@ -2,7 +2,6 @@ import { useTranslations } from "next-intl"
 import { expertiseVideos } from "@/config/expertise"
 import { VideoEmbed } from "./VideoEmbed"
 
-/** Right column: media appearances as lazy YouTube embeds with captions. */
 export function MediaComments() {
   const t = useTranslations("home.expertise.media")
   const tv = useTranslations("home.expertise.videos")

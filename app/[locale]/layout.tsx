@@ -58,7 +58,6 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound()
   }
-  // Enable static rendering
   setRequestLocale(locale as Loc)
 
   return (

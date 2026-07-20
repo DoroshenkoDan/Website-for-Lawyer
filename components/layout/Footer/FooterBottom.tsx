@@ -7,7 +7,6 @@ const legalLinks = [
   { href: "/privacy", labelKey: "privacy" },
 ] as const
 
-/** Bottom legal bar: copyright, legal links and the developer credit. */
 export function FooterBottom() {
   const tFooter = useTranslations("footer")
   const year = new Date().getFullYear()

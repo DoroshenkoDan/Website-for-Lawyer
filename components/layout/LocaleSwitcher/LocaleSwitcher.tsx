@@ -12,7 +12,6 @@ const localeLabels: Record<string, string> = {
   pl: "PL",
 }
 
-/** Switches the active locale, preserving the current pathname. */
 export function LocaleSwitcher() {
   const activeLocale = useLocale()
   const router = useRouter()
@@ -22,7 +21,6 @@ export function LocaleSwitcher() {
   function switchTo(nextLocale: string) {
     if (nextLocale === activeLocale) return
     router.replace(
-      // Preserve dynamic params across the locale change.
       // @ts-expect-error -- pathname & params are compatible at runtime
       { pathname, params },
       { locale: nextLocale },

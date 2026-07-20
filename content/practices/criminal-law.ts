@@ -1,9 +1,5 @@
 import type { PracticeContent } from "@/types/practices"
 
-/**
- * Criminal-law practice body. Intro paragraphs then a flat list of five
- * services. Emphasis (`**…**`) is restrained — one key phrase per item.
- */
 export const criminalLaw: PracticeContent = {
   body: {
     uk: [

@@ -2,19 +2,13 @@ import { ArrowRight } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 
 export interface PracticeCardProps {
-  /** Display order, pre-formatted (e.g. "01"). */
   number: string
-  /** Practice name shown as the card heading. */
   title: string
-  /** Short supporting description. */
   description: string
-  /** Link to the practice page. */
   href: string
-  /** Localised "read more" link label. */
   readMoreLabel: string
 }
 
-/** A single practice on the practices page: a numbered dark card linking to its page. */
 export function PracticeCard({
   number,
   title,

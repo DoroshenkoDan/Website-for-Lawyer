@@ -12,14 +12,12 @@ const socialLinks = [
   { Icon: LinkedinIcon, href: siteConfig.social.linkedin, label: "LinkedIn" },
 ] as const
 
-/** Brand, navigation and contacts — the main three-column footer block. */
 export function FooterTop() {
   const tNav = useTranslations("nav")
   const tFooter = useTranslations("footer")
 
   return (
     <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
-      {/* Brand */}
       <div className="flex flex-col gap-3.25">
         <Link
           href="/"
@@ -35,7 +33,6 @@ export function FooterTop() {
         </p>
       </div>
 
-      {/* Navigation */}
       <nav className="flex flex-col gap-3.5">
         <p className="text-sm font-semibold leading-5.25 text-white">
           {tFooter("navTitle")}
@@ -54,7 +51,6 @@ export function FooterTop() {
         </ul>
       </nav>
 
-      {/* Contacts */}
       <div className="flex flex-col gap-3.5">
         <p className="text-sm font-semibold leading-5.25 text-white">
           {tFooter("contactsTitle")}

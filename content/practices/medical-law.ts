@@ -1,10 +1,5 @@
 import type { PracticeContent } from "@/types/practices"
 
-/**
- * Medical-law practice body. Two intro paragraphs on the field's complexity,
- * then a flat list of 10 services. Emphasis (`**…**`) is restrained — one key
- * phrase per paragraph/item.
- */
 export const medicalLaw: PracticeContent = {
   body: {
     uk: [

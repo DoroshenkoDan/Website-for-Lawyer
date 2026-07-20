@@ -1,16 +1,6 @@
-/**
- * The 8 legal practice areas.
- *
- * Each practice has a dedicated route folder under `app/[locale]/practices/<route>`
- * (pages can differ structurally — e.g. electronic-declarations has sub-categories).
- * Display text (title / description) comes from `messages` under `practices.items.<id>`.
- */
 export interface Practice {
-  /** Stable id, also the i18n key under `practices.items`. */
   id: string;
-  /** URL path (relative to the app root, locale-prefixed automatically). */
   href: string;
-  /** Whether this practice has sub-category pages. */
   hasCategories?: boolean;
 }
 

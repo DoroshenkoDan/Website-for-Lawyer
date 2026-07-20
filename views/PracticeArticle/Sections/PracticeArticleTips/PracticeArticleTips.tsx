@@ -8,12 +8,6 @@ function format(index: number) {
   return String(index + 1).padStart(2, "0")
 }
 
-/**
- * "Practical tips" — only on the electronic-declarations page. An exclusive
- * accordion (native `<details name>`, no client JS): all nine titles stay
- * compact, opening one closes the others. Bodies render server-side so they
- * stay indexable; each item keeps a slug id anchor for deep-linking.
- */
 export function PracticeArticleTips() {
   const locale = useLocale() as Loc
   const t = useTranslations("practices.tips")

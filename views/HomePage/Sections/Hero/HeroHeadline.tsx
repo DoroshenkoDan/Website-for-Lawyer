@@ -11,7 +11,6 @@ export function HeroHeadline() {
         </span>
         {t("eyebrow")}
       </p>
-      {/* Name first */}
       <h1 className="mt-4 font-heading text-3xl text-white lg:mt-5 lg:text-[3.75rem] lg:leading-[1.1]">
         {t("label")}
       </h1>

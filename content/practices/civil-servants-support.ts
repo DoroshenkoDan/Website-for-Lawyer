@@ -1,9 +1,5 @@
 import type { PracticeContent } from "@/types/practices"
 
-/**
- * Civil-servants-support practice body. Lead + context paragraphs, a short
- * services list, and closing paragraphs. Emphasis (`**…**`) is restrained.
- */
 export const civilServantsSupport: PracticeContent = {
   body: {
     uk: [

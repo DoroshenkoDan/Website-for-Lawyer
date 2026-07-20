@@ -58,7 +58,6 @@ export function Bio() {
           </ul>
         </div>
 
-        {/* Links to the Awards and In-Memory sub-pages */}
         <div className="mx-auto mt-14 grid max-w-2xl gap-5 sm:grid-cols-2">
           <Link
             href="/about/awards"

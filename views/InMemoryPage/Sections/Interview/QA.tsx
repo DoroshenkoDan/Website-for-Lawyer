@@ -1,6 +1,5 @@
 import { COLUMN } from "./column"
 
-/** A question with its answer paragraphs, in the narrow reading column. */
 export function QA({
   question,
   answer,

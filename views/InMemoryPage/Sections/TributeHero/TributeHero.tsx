@@ -21,7 +21,6 @@ export function TributeHero() {
             className="object-cover object-[72%_center]"
           />
 
-          {/* Legibility scrims */}
           <div
             aria-hidden
             className="absolute inset-0 bg-linear-to-r from-graphite-deep via-graphite-deep/80 to-transparent"
@@ -31,7 +30,6 @@ export function TributeHero() {
             className="absolute inset-0 bg-linear-to-t from-graphite-deep/90 via-graphite-deep/10 to-transparent"
           />
 
-          {/* Breadcrumb, pinned top-left. */}
           <nav
             aria-label="breadcrumb"
             className="absolute left-0 top-0 z-10 px-6 pt-6 sm:px-10 sm:pt-8 lg:px-14"
@@ -63,7 +61,6 @@ export function TributeHero() {
             </ol>
           </nav>
 
-          {/* Headline quote block. */}
           <div className="relative z-10 max-w-[720px] px-6 pb-10 sm:px-10 sm:pb-14 lg:px-14 lg:pb-16">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sage">
               {t("kicker")}

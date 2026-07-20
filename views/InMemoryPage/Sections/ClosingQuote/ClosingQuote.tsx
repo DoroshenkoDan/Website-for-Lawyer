@@ -3,7 +3,6 @@ import { useLocale, useTranslations } from "next-intl"
 import { Container } from "@/components/layout/Container"
 import { tribute } from "@/content/inMemory"
 
-/** Dark closing band: a final maxim from the interview, signed. */
 export function ClosingQuote() {
   const locale = useLocale() as Loc
   const t = useTranslations("about.inMemory")

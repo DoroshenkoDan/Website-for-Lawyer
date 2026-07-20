@@ -1,6 +1,5 @@
 import type { SVGProps } from "react"
 
-/** RG seal — rim + monogram */
 export function Seal(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -17,7 +16,6 @@ export function Seal(props: SVGProps<SVGSVGElement>) {
         <path id="textCircle" d="M 200 30 A 170 170 0 1 1 199.99 30 Z" fill="none" />
       </defs>
 
-      {/* Rim */}
       <circle cx="200" cy="200" r="195" fill="none" stroke="currentColor" strokeWidth="4" />
       <circle cx="200" cy="200" r="185" fill="none" stroke="currentColor" strokeWidth="1" />
       <text className="seal-text" fill="currentColor">
@@ -27,7 +25,6 @@ export function Seal(props: SVGProps<SVGSVGElement>) {
       </text>
       <circle cx="200" cy="200" r="155" fill="none" stroke="currentColor" strokeWidth="1" />
 
-      {/* Monogram */}
       <text
         className="seal-monogram"
         x="200"

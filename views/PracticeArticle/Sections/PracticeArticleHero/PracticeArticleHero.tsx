@@ -3,10 +3,6 @@ import { Link } from "@/i18n/navigation"
 import { Container } from "@/components/layout/Container"
 import type { PracticeId } from "@/config/practices"
 
-/**
- * Dark title band: breadcrumb + H1, on the page's default dark background.
- * The lead/description lives below in the Body section, beside the photo.
- */
 export function PracticeArticleHero({ id }: { id: PracticeId }) {
   const t = useTranslations("practices.items")
   const tNav = useTranslations("nav")
