@@ -18,7 +18,7 @@ export const expertiseLectures = [
 ] as const satisfies readonly ExpertiseLecture[];
 
 export const expertiseVideos = [
-  { id: "tv-comment", youtubeId: "dQw4w9WgXcQ" },
-  { id: "interview", youtubeId: "dQw4w9WgXcQ" },
-  { id: "forum", youtubeId: "dQw4w9WgXcQ" },
+  { id: "morning-show", youtubeId: "8iOGpPUPFdY" },
+  { id: "tv-comment", youtubeId: "_fJwZSCJbtE" },
+  { id: "radio-declaration", youtubeId: "QT7d3vWk8nk" },
 ] as const satisfies readonly ExpertiseVideo[];
