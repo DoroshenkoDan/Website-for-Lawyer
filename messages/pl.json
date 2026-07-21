@@ -242,7 +242,10 @@
     "title": "Aktualności",
     "subtitle": "Najnowsze wiadomości i aktualizacje",
     "lead": "Bieżące wydarzenia, komentarze i aktualizacje praktyki. Śledź najważniejsze wiadomości i stanowiska prawne w głośnych sprawach.",
-    "readArticle": "Czytaj artykuł"
+    "readArticle": "Czytaj artykuł",
+    "pagination": "Paginacja",
+    "prevPage": "Poprzednia strona",
+    "nextPage": "Następna strona"
   },
   "contacts": {
     "title": "Kontakt",

@@ -1,28 +1,37 @@
 import "server-only";
 import type { NewsItem } from "@/types/news";
-import { apiFetch } from "./client";
-import { newsItemSchema, newsListSchema } from "./schemas";
+import { apiFetch, apiFetchWithMeta } from "./client";
+import { newsItemSchema } from "./schemas";
 import { wpPostListSchema, mapWpPost } from "./wp";
 
 const NEWS_CATEGORY_ID = 21;
 const NEWS_REVALIDATE_SECONDS = 300;
 
-export async function getLatestNews(limit: number): Promise<NewsItem[]> {
-  const params = new URLSearchParams({
+function newsQuery(extra: Record<string, string>): string {
+  return new URLSearchParams({
     categories: String(NEWS_CATEGORY_ID),
-    per_page: String(limit),
     _embed: "1",
     _fields: "id,slug,date,title,excerpt,_links,_embedded",
-  });
-  const data = await apiFetch(`/posts?${params.toString()}`, {
+    ...extra,
+  }).toString();
+}
+
+export async function getLatestNews(limit: number): Promise<NewsItem[]> {
+  const data = await apiFetch(`/posts?${newsQuery({ per_page: String(limit) })}`, {
     next: { revalidate: NEWS_REVALIDATE_SECONDS },
   });
   return wpPostListSchema.parse(data).map(mapWpPost);
 }
 
-export async function getNews(locale: string) {
-  const data = await apiFetch(`/news?locale=${encodeURIComponent(locale)}`);
-  return newsListSchema.parse(data);
+export async function getNewsPage(
+  page: number,
+  perPage: number,
+): Promise<{ items: NewsItem[]; totalPages: number }> {
+  const { data, totalPages } = await apiFetchWithMeta(
+    `/posts?${newsQuery({ per_page: String(perPage), page: String(page) })}`,
+    { next: { revalidate: NEWS_REVALIDATE_SECONDS } },
+  );
+  return { items: wpPostListSchema.parse(data).map(mapWpPost), totalPages };
 }
 
 export async function getNewsBySlug(slug: string, locale: string) {

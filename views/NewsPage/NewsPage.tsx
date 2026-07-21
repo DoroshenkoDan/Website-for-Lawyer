@@ -5,7 +5,7 @@ import { Container } from "@/components/layout/Container"
 import { NewsList } from "./Sections/NewsList"
 import { NewsListSkeleton } from "./Sections/NewsList/NewsListSkeleton"
 
-export function NewsPage({ locale }: { locale: string }) {
+export function NewsPage({ page }: { page: number }) {
   const t = useTranslations("news")
   return (
     <>
@@ -13,7 +13,7 @@ export function NewsPage({ locale }: { locale: string }) {
       <section className="bg-haze pb-16 lg:pb-24 pt-16 lg:pt-24">
         <Container>
           <Suspense fallback={<NewsListSkeleton />}>
-            <NewsList locale={locale} />
+            <NewsList page={page} />
           </Suspense>
         </Container>
       </section>

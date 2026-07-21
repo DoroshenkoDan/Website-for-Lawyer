@@ -1,7 +1,7 @@
 import "server-only";
 import type { NewsItem } from "@/types/news";
 import type { MediaItem } from "@/types/media";
-import { getLatestNews, getNews, getNewsBySlug } from "./news";
+import { getLatestNews, getNewsPage, getNewsBySlug } from "./news";
 import { getMedia } from "./media";
 import { getMockNews, getMockNewsBySlug } from "@/config/mockNews";
 import { sampleMedia } from "@/config/sampleMedia";
@@ -16,11 +16,22 @@ export async function readLatestNews(limit = 3): Promise<NewsItem[]> {
   }
 }
 
-export async function readNewsList(locale: string): Promise<NewsItem[]> {
+export async function readNewsPage(
+  page: number,
+  perPage = 10,
+): Promise<{ items: NewsItem[]; totalPages: number }> {
   try {
-    return await getNews(locale);
+    return await getNewsPage(page, perPage);
   } catch {
-    return isDev ? getMockNews(locale) : [];
+    if (isDev) {
+      const all = getMockNews("uk");
+      const start = (page - 1) * perPage;
+      return {
+        items: all.slice(start, start + perPage),
+        totalPages: Math.max(1, Math.ceil(all.length / perPage)),
+      };
+    }
+    return { items: [], totalPages: 0 };
   }
 }
 

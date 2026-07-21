@@ -20,43 +20,46 @@ export function ArticleCard({
   readLabel,
 }: ArticleCardProps) {
   return (
-    <article className="group flex flex-col border-b border-accent pb-10">
-      <Link href={href} className="flex flex-col gap-5">
-        <div className="relative aspect-16/10 w-full max-w-75 overflow-hidden rounded-lg bg-metrics">
-          {image ? (
-            <Image
-              src={image}
-              alt=""
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-              sizes="300px"
-            />
-          ) : (
-            <div className="grid h-full place-items-center">
-              <ImageIcon className="size-8 text-graphite/25" aria-hidden />
-            </div>
-          )}
-        </div>
+    <article className="group flex flex-col gap-5 border-b border-accent pb-10 lg:flex-row">
+      <Link
+        href={href}
+        aria-label={title}
+        className="relative block aspect-square w-full shrink-0 overflow-hidden rounded-lg bg-metrics lg:w-80"
+      >
+        {image ? (
+          <Image
+            src={image}
+            alt=""
+            fill
+            className="object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+            sizes="(min-width: 1024px) 320px, 100vw"
+          />
+        ) : (
+          <span className="grid h-full place-items-center">
+            <ImageIcon className="size-8 text-graphite/25" aria-hidden />
+          </span>
+        )}
+      </Link>
 
-        <div className="flex flex-col gap-3">
+      <div className="flex flex-1 flex-col gap-3">
+        <Link href={href}>
           <h3 className="font-heading text-2xl font-medium leading-snug text-firefly transition-colors group-hover:text-accent-deep">
             {title}
           </h3>
-          <p className="line-clamp-3 text-base leading-relaxed text-graphite/70">
-            {excerpt}
-          </p>
-        </div>
-      </Link>
-
-      <Link
-        href={href}
-        className={cn(
-          buttonVariants({ variant: "secondary", size: "sm" }),
-          "mt-6 w-fit px-5",
-        )}
-      >
-        {readLabel}
-      </Link>
+        </Link>
+        <p className="line-clamp-3 text-base leading-relaxed text-graphite/70">
+          {excerpt}
+        </p>
+        <Link
+          href={href}
+          className={cn(
+            buttonVariants({ variant: "secondary", size: "sm" }),
+            "mt-6 w-fit self-end px-5",
+          )}
+        >
+          {readLabel}
+        </Link>
+      </div>
     </article>
   )
 }

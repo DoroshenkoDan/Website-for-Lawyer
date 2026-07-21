@@ -3,7 +3,10 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { NewsPage } from "@/views/NewsPage";
 import { buildPageMetadata } from "@/lib/seo";
 
-type Props = { params: Promise<{ locale: string }> };
+type Props = {
+  params: Promise<{ locale: string }>;
+  searchParams: Promise<{ page?: string }>;
+};
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -16,8 +19,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-export default async function Page({ params }: Props) {
+export default async function Page({ params, searchParams }: Props) {
   const { locale } = await params;
+  const { page } = await searchParams;
   setRequestLocale(locale as Loc);
-  return <NewsPage locale={locale} />;
+  const currentPage = Math.max(1, Number(page) || 1);
+  return <NewsPage page={currentPage} />;
 }
