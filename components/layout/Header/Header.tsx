@@ -10,7 +10,7 @@ import { Mail } from "lucide-react"
 import { MenuButton } from "./MenuButton"
 import { HeaderMenu } from "./HeaderMenu"
 import { Seal } from "@/components/layout/PageBanner/Seal"
-
+// TODO: fix header width
 export function Header() {
   const t = useTranslations()
   const [open, setOpen] = useState(false)

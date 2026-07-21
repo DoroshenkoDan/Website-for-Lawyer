@@ -1,7 +1,6 @@
 import "server-only";
 import type { NewsItem } from "@/types/news";
 import { apiFetch, apiFetchWithMeta } from "./client";
-import { newsItemSchema } from "./schemas";
 import { wpPostListSchema, mapWpPost } from "./wp";
 
 const NEWS_CATEGORY_ID = 21;
@@ -34,9 +33,15 @@ export async function getNewsPage(
   return { items: wpPostListSchema.parse(data).map(mapWpPost), totalPages };
 }
 
-export async function getNewsBySlug(slug: string, locale: string) {
+export async function getNewsBySlug(slug: string): Promise<NewsItem | null> {
   const data = await apiFetch(
-    `/news/${encodeURIComponent(slug)}?locale=${encodeURIComponent(locale)}`,
+    `/posts?${newsQuery({
+      slug,
+      per_page: "1",
+      _fields: "id,slug,date,title,excerpt,content,_links,_embedded",
+    })}`,
+    { next: { revalidate: NEWS_REVALIDATE_SECONDS } },
   );
-  return newsItemSchema.parse(data);
+  const post = wpPostListSchema.parse(data)[0];
+  return post ? mapWpPost(post) : null;
 }

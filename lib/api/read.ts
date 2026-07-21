@@ -40,7 +40,7 @@ export async function readNewsArticle(
   locale: string,
 ): Promise<NewsItem | null> {
   try {
-    return await getNewsBySlug(slug, locale);
+    return await getNewsBySlug(slug);
   } catch {
     return isDev ? getMockNewsBySlug(slug, locale) : null;
   }

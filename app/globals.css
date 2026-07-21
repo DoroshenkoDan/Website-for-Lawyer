@@ -54,3 +54,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 600;
 }
+
+.article-prose figure:has(img[src*="/emoji/"]) {
+  display: inline;
+  margin: 0;
+}
+
+.article-prose img[src*="/emoji/"] {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0;
+  vertical-align: middle;
+}
