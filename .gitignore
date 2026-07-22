@@ -12,6 +12,7 @@
 
 # testing
 /coverage
+/.nyc_output
 
 # next.js
 /.next/
@@ -20,9 +21,11 @@
 # production
 /build
 
-# misc
-.DS_Store
-*.pem
+# build caches
+.turbo/
+.swc/
+.eslintcache
+.cache/
 
 # AI tooling
 .claude/
@@ -35,9 +38,54 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# contact form leads log (never commit submitted personal data)
+*.log
+lib/api/leads.log
+
 # env files (can opt-in for committing if needed)
 .env*
 !.env.example
+
+# certificates, keys & secrets (never commit)
+*.pem
+*.key
+*.crt
+*.cert
+*.cer
+*.p12
+*.pfx
+*.der
+*.gpg
+id_rsa
+id_ed25519
+*_rsa
+secrets.*
+
+# editor / IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~
+*.sublime-workspace
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.stackdump
+
+# backup / temp files
+*.bak
+*.orig
+*.tmp
+*.rej
 
 # vercel
 .vercel

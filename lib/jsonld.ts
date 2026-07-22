@@ -11,8 +11,5 @@ export function attorneyJsonLd(locale: string) {
     ...(siteConfig.contacts.phone
       ? { telephone: siteConfig.contacts.phone }
       : {}),
-    ...(siteConfig.contacts.address
-      ? { address: siteConfig.contacts.address }
-      : {}),
   };
 }

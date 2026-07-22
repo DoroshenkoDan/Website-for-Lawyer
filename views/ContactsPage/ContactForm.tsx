@@ -3,7 +3,9 @@
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { useLocale, useTranslations } from "next-intl"
+import { useTranslations } from "next-intl"
+import { Check } from "lucide-react"
+import { Link } from "@/i18n/navigation"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { createContactSchema, type ContactFormValues } from "./contactSchema"
@@ -29,7 +31,6 @@ function ErrorBadge({ message }: { message?: string }) {
 
 export function ContactForm() {
   const t = useTranslations("contacts.form")
-  const locale = useLocale()
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle")
 
   const schema = createContactSchema(t)
@@ -39,15 +40,24 @@ export function ContactForm() {
     handleSubmit,
     reset,
     formState: { errors, isSubmitting },
-  } = useForm<ContactFormValues>({ resolver: zodResolver(schema) })
+  } = useForm<ContactFormValues>({
+    resolver: zodResolver(schema),
+    defaultValues: { consent: false, website: "" },
+  })
 
   async function onSubmit(values: ContactFormValues) {
     setStatus("idle")
     try {
-      const res = await fetch("/api/contacts", {
+      const res = await fetch("/lib/api/send.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...values, locale }),
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          phone: values.phone,
+          message: values.message,
+          website: values.website,
+        }),
       })
       if (!res.ok) throw new Error()
       reset()
@@ -59,6 +69,21 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6" noValidate>
+      <div
+        aria-hidden
+        className="absolute left-[-9999px] top-[-9999px] h-px w-px overflow-hidden"
+      >
+        <label>
+          Website
+          <input
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            {...register("website")}
+          />
+        </label>
+      </div>
+
       <div className="relative">
         <label className="mb-0.5 block text-sm text-submarine">
           {t("name")} <span className="text-accent">*</span>
@@ -90,9 +115,7 @@ export function ContactForm() {
       </div>
 
       <div className="relative">
-        <label className="mb-0.5 block text-sm text-submarine">
-          {t("message")}
-        </label>
+        <label className="mb-0.5 block text-sm text-submarine">{t("message")}</label>
         <textarea
           rows={3}
           {...register("message")}
@@ -102,7 +125,42 @@ export function ContactForm() {
         <ErrorBadge message={errors.message?.message} />
       </div>
 
-      <Button type="submit" className="w-full" disabled={isSubmitting}>
+      <div>
+        <label className="flex items-start gap-2 text-sm text-submarine">
+          <span className="relative mt-0.5 block size-5 shrink-0">
+            <input
+              type="checkbox"
+              {...register("consent")}
+              aria-invalid={!!errors.consent}
+              className="peer size-5 cursor-pointer appearance-none rounded border border-white/30 bg-white/5 transition-colors hover:border-accent-hover checked:border-accent checked:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40 aria-invalid:border-red-500"
+            />
+            <Check
+              aria-hidden
+              strokeWidth={3}
+              className="pointer-events-none absolute inset-0 m-auto size-3.5 text-white opacity-0 transition-opacity peer-checked:opacity-100"
+            />
+          </span>
+          <span>
+            {t.rich("consent", {
+              link: (chunks) => (
+                <Link
+                  href="/privacy"
+                  className="text-accent underline underline-offset-2 transition-colors hover:text-accent-hover"
+                >
+                  {chunks}
+                </Link>
+              ),
+            })}
+          </span>
+        </label>
+        {errors.consent && (
+          <p className="mt-1 text-[11px] text-red-500">
+            {errors.consent.message}
+          </p>
+        )}
+      </div>
+
+      <Button type="submit" className="w-full cursor-pointer" disabled={isSubmitting}>
         {isSubmitting ? t("submitting") : t("submit")}
       </Button>
 

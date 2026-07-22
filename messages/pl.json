@@ -264,10 +264,13 @@
       "submitting": "Wysyłanie…",
       "success": "Dziękujemy! Twoja wiadomość została wysłana.",
       "error": "Nie udało się wysłać. Spróbuj ponownie.",
+      "consent": "Akceptuję <link>Politykę prywatności</link>",
       "validation": {
         "nameRequired": "Podaj imię",
         "emailInvalid": "Nieprawidłowy adres e-mail",
-        "messageToBig": "Maksymalna długość 450 znaków"
+        "messageRequired": "Wpisz wiadomość",
+        "messageToBig": "Maksymalna długość 450 znaków",
+        "consentRequired": "Musisz zaakceptować Politykę prywatności"
       }
     }
   },

@@ -9,6 +9,10 @@ export function createContactSchema(t: Translate) {
     email: z.email(t("validation.emailInvalid")),
     phone: z.string().optional(),
     message: z.string().max(450, t("validation.messageToBig")).optional(),
+    website: z.string().optional(),
+    consent: z
+      .boolean()
+      .refine((value) => value === true, t("validation.consentRequired")),
   });
 }
 

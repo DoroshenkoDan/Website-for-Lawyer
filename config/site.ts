@@ -4,7 +4,6 @@ export const siteConfig = {
   contacts: {
     email: "r.guseinova.lawyer@gmail.com",
     phone: "",
-    address: "Золотоворітський проїзд, 3, Київ, Украина",
   },
   social: {
     facebook: "",

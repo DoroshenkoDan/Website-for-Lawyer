@@ -264,10 +264,13 @@
       "submitting": "Sending…",
       "success": "Thank you! Your message has been sent.",
       "error": "Failed to send. Please try again.",
+      "consent": "I agree with the <link>Privacy Policy</link>",
       "validation": {
         "nameRequired": "Please enter your name",
         "emailInvalid": "Invalid email address",
-        "messageToBig": "Maximum length 450 characters"
+        "messageRequired": "Please enter a message",
+        "messageToBig": "Maximum length 450 characters",
+        "consentRequired": "You must agree to the Privacy Policy"
       }
     }
   },
