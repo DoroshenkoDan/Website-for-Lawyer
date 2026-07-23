@@ -92,11 +92,14 @@
       "viewAll": "Wszystkie materiały",
       "lectures": {
         "title": "Seminaria i wykłady",
-        "nazk": "NAZK — wykład dla urzędników państwowych (2024)",
-        "judges-school": "Krajowa Szkoła Sędziów Ukrainy — warsztat z deklaracji",
-        "odesa-council": "Odeska Rada Obwodowa — seminarium z prawa antykorupcyjnego",
-        "ministry-justice": "Ministerstwo Sprawiedliwości Ukrainy — webinar dla prawników",
-        "national-academy": "Krajowa Akademia Administracji Publicznej — cykl wykładów"
+        "judges-quals": "Seminarium podnoszące kwalifikacje sędziów i asystentów sądowych",
+        "e-declaration": "Praktyczne seminarium o e-deklaracjach majątkowych",
+        "warsaw-2023": "Wystąpienie w Domu Ukraińskim, Warszawa (2023)",
+        "declaration-civil-servants": "Specyfika e-deklaracji dochodów urzędników państwowych",
+        "lectures-for-judges": "Nawet adwokaci czasem wykładają sędziom",
+        "professional-development": "Seminarium doskonalenia zawodowego",
+        "attorney-ethics": "Odpowiedzialność dyscyplinarna adwokata za naruszenie etyki",
+        "client-lies": "Seminarium „Czy klient zawsze kłamie?”"
       },
       "media": {
         "title": "Komentarze dla mediów",

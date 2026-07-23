@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl"
 import { ArrowUpRight } from "lucide-react"
+import { Link } from "@/i18n/navigation"
 import { cn } from "@/lib/utils"
 import { expertiseLectures } from "@/config/expertise"
 
@@ -14,10 +15,8 @@ export function LectureList() {
       <ul className="mt-2">
         {expertiseLectures.map((lecture, index) => (
           <li key={lecture.id}>
-            <a
+            <Link
               href={lecture.href}
-              target="_blank"
-              rel="noopener noreferrer"
               className={cn(
                 "group flex items-center justify-between gap-4 py-3.5",
                 index > 0 && "border-t border-graphite/5",
@@ -30,7 +29,7 @@ export function LectureList() {
                 className="size-4 shrink-0 text-graphite/30 transition-colors group-hover:text-accent"
                 aria-hidden
               />
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

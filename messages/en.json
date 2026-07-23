@@ -92,11 +92,14 @@
       "viewAll": "All materials",
       "lectures": {
         "title": "Seminars and lectures",
-        "nazk": "NACP — lecture for public officials (2024)",
-        "judges-school": "National School of Judges of Ukraine — declaration workshop",
-        "odesa-council": "Odesa Regional Council — anti-corruption law seminar",
-        "ministry-justice": "Ministry of Justice of Ukraine — webinar for lawyers",
-        "national-academy": "National Academy of Public Administration — lecture series"
+        "judges-quals": "Seminar to maintain qualifications of judges and court assistants",
+        "e-declaration": "Practical seminar on electronic asset declarations",
+        "warsaw-2023": "Talk at the Ukrainian House, Warsaw (2023)",
+        "declaration-civil-servants": "Specifics of electronic income declarations for civil servants",
+        "lectures-for-judges": "Even attorneys sometimes lecture judges",
+        "professional-development": "Professional development seminar",
+        "attorney-ethics": "Disciplinary liability of an attorney for breaching ethics",
+        "client-lies": "Seminar “Does the client always lie?”"
       },
       "media": {
         "title": "Media commentary",
