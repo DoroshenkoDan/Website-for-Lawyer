@@ -45,11 +45,13 @@ export async function apiFetch(
 export async function apiFetchWithMeta(
   path: string,
   init: RequestInit = {},
-): Promise<{ data: unknown; totalPages: number }> {
+): Promise<{ data: unknown; totalPages: number; total: number }> {
   const res = await request(path, init);
   const totalPages = Number(res.headers.get("X-WP-TotalPages") ?? "1");
+  const total = Number(res.headers.get("X-WP-Total") ?? "0");
   return {
     data: await res.json(),
     totalPages: Number.isFinite(totalPages) && totalPages > 0 ? totalPages : 1,
+    total: Number.isFinite(total) && total > 0 ? total : 0,
   };
 }

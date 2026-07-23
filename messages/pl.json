@@ -236,7 +236,10 @@
       "radio": "Radio",
       "print": "Prasa",
       "seminars": "Seminaria"
-    }
+    },
+    "pagination": "Paginacja",
+    "prevPage": "Poprzednia strona",
+    "nextPage": "Następna strona"
   },
   "news": {
     "title": "Aktualności",

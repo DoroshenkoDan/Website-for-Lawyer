@@ -1,81 +1,89 @@
-"use client"
-
-import { useState } from "react"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { Container } from "@/components/layout/Container"
+import { Link } from "@/i18n/navigation"
 import { cn } from "@/lib/utils"
-import type { MediaCategory, MediaGroup } from "@/types/media"
+import { MEDIA_CATEGORIES } from "@/types/media"
+import type { MediaCategory, MediaItem } from "@/types/media"
+import { PublicationsList } from "../PublicationsList"
 import { MediaCard } from "./MediaCard"
+import { MediaPagination } from "./MediaPagination"
 
-export function MediaTabs({ groups }: { groups: MediaGroup[] }) {
-  const t = useTranslations("media")
-  const tc = useTranslations("common")
-  const [active, setActive] = useState<MediaCategory>(
-    groups[0]?.category ?? "tv",
-  )
+export async function MediaTabs({
+  activeCategory,
+  counts,
+  items = [],
+  page,
+  totalPages,
+  publications,
+}: {
+  activeCategory: MediaCategory
+  counts: Record<MediaCategory, number>
+  items?: MediaItem[]
+  page?: number
+  totalPages?: number
+  publications?: string
+}) {
+  const t = await getTranslations("media")
+  const tc = await getTranslations("common")
 
   return (
     <section className="bg-haze py-16 lg:py-20">
       <Container>
-        <div
-          role="tablist"
+        <nav
           aria-label={t("title")}
-          className="flex flex-wrap gap-2.5"
+          className="flex flex-wrap gap-x-7 gap-y-3 border-b border-graphite/10"
         >
-          {groups.map((group) => {
-            const isActive = group.category === active
+          {MEDIA_CATEGORIES.map((category) => {
+            const isActive = category === activeCategory
             return (
-              <button
-                key={group.category}
-                type="button"
-                role="tab"
-                id={`tab-${group.category}`}
-                aria-selected={isActive}
-                aria-controls={`panel-${group.category}`}
-                onClick={() => setActive(group.category)}
+              <Link
+                key={category}
+                href={`/media?tab=${category}`}
+                aria-current={isActive ? "page" : undefined}
                 className={cn(
-                  "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-colors",
+                  "-mb-px inline-flex items-start gap-1 border-b-2 pb-3 font-heading text-lg leading-none transition-colors sm:text-xl",
                   isActive
-                    ? "border-accent bg-accent text-white"
-                    : "border-graphite/15 text-graphite/70 hover:border-accent hover:text-graphite",
+                    ? "border-accent font-medium text-firefly"
+                    : "border-transparent text-graphite/45 hover:border-graphite/25 hover:text-graphite",
                 )}
               >
-                {t(`categories.${group.category}`)}
-                <span
-                  className={cn(
-                    "text-xs tabular-nums",
-                    isActive ? "text-white/70" : "text-graphite/40",
-                  )}
-                >
-                  {group.items.length}
+                {t(`categories.${category}`)}
+                <span className="text-[0.7rem] font-normal tabular-nums text-graphite/40">
+                  {counts[category]}
                 </span>
-              </button>
+              </Link>
             )
           })}
-        </div>
+        </nav>
 
-        {groups.map((group) => (
-          <section
-            key={group.category}
-            id={`panel-${group.category}`}
-            role="tabpanel"
-            aria-labelledby={`tab-${group.category}`}
-            hidden={group.category !== active}
-            className="mt-10"
-          >
-            <h2 className="sr-only">{t(`categories.${group.category}`)}</h2>
+        <div className="mt-10">
+          <h2 className="sr-only">{t(`categories.${activeCategory}`)}</h2>
 
-            {group.items.length > 0 ? (
-              <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                {group.items.map((item) => (
+          {activeCategory === "print" ? (
+            publications ? (
+              <PublicationsList html={publications} />
+            ) : (
+              <p className="text-graphite/55">{tc("empty")}</p>
+            )
+          ) : items.length > 0 ? (
+            <>
+              <ul className="grid gap-6 md:grid-cols-2">
+                {items.map((item) => (
                   <MediaCard key={item.id} item={item} />
                 ))}
               </ul>
-            ) : (
-              <p className="text-graphite/55">{tc("empty")}</p>
-            )}
-          </section>
-        ))}
+              {typeof page === "number" && typeof totalPages === "number" && (
+                <MediaPagination
+                  category={activeCategory}
+                  page={page}
+                  totalPages={totalPages}
+                />
+              )}
+            </>
+          ) : (
+            <p className="text-graphite/55">{tc("empty")}</p>
+          )}
+        </div>
       </Container>
     </section>
   )

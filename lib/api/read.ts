@@ -1,8 +1,10 @@
 import "server-only";
 import type { NewsItem } from "@/types/news";
-import type { MediaItem } from "@/types/media";
+import type { MediaCategory, MediaItem } from "@/types/media";
+import { MEDIA_CATEGORIES } from "@/types/media";
 import { getLatestNews, getNewsPage, getNewsBySlug } from "./news";
-import { getMedia } from "./media";
+import { getMediaPage, getMediaCount, getMediaBySlug, MEDIA_TAGS } from "./media";
+import { getPublications, type Publications } from "./publications";
 import { getMockNews, getMockNewsBySlug } from "@/config/mockNews";
 import { sampleMedia } from "@/config/sampleMedia";
 
@@ -46,11 +48,65 @@ export async function readNewsArticle(
   }
 }
 
-export async function readMediaList(locale: string): Promise<MediaItem[]> {
+function sampleFor(category: MediaCategory): MediaItem[] {
+  return sampleMedia.filter((item) => item.category === category);
+}
+
+export async function readMediaPanel(
+  category: MediaCategory,
+  page: number,
+  perPage = 10,
+): Promise<{ items: MediaItem[]; totalPages: number }> {
+  const fallback = () =>
+    isDev
+      ? { items: sampleFor(category), totalPages: 1 }
+      : { items: [], totalPages: 1 };
+
+  if (!MEDIA_TAGS[category]) return fallback();
+
   try {
-    const items = await getMedia(locale);
-    return items.length === 0 && isDev ? sampleMedia : items;
+    return await getMediaPage(category, page, perPage);
   } catch {
-    return isDev ? sampleMedia : [];
+    return fallback();
   }
+}
+
+export async function readMediaArticle(
+  slug: string,
+): Promise<NewsItem | null> {
+  try {
+    return await getMediaBySlug(slug);
+  } catch {
+    return null;
+  }
+}
+
+export async function readPublications(): Promise<Publications> {
+  try {
+    return await getPublications();
+  } catch {
+    return { html: "", count: 0 };
+  }
+}
+
+export async function readMediaCounts(): Promise<Record<MediaCategory, number>> {
+  const entries = await Promise.all(
+    MEDIA_CATEGORIES.map(async (category) => {
+      const fallback = isDev ? sampleFor(category).length : 0;
+      if (category === "print") {
+        try {
+          return [category, (await getPublications()).count] as const;
+        } catch {
+          return [category, fallback] as const;
+        }
+      }
+      if (!MEDIA_TAGS[category]) return [category, fallback] as const;
+      try {
+        return [category, await getMediaCount(category)] as const;
+      } catch {
+        return [category, fallback] as const;
+      }
+    }),
+  );
+  return Object.fromEntries(entries) as Record<MediaCategory, number>;
 }

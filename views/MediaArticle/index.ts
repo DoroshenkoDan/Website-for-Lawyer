@@ -1,0 +1,1 @@
+export { MediaArticle } from "./MediaArticle"

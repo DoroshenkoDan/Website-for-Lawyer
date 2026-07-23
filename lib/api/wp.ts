@@ -68,7 +68,7 @@ function stripTags(input: string): string {
   return input.replace(/<[^>]*>/g, "");
 }
 
-function toText(rendered: string): string {
+export function toText(rendered: string): string {
   return decodeEntities(stripTags(rendered)).replace(/\s+/g, " ").trim();
 }
 

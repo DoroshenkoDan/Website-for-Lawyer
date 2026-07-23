@@ -4,7 +4,8 @@ export interface MediaItem {
   id: string;
   title: string;
   category: MediaCategory;
-  url: string;
+  slug?: string;
+  url?: string;
   source?: string;
   thumbnail?: string;
   publishedAt: string;
@@ -21,3 +22,7 @@ export const MEDIA_CATEGORIES: readonly MediaCategory[] = [
   "print",
   "seminars",
 ];
+
+export function isMediaCategory(value: string | undefined): value is MediaCategory {
+  return value !== undefined && (MEDIA_CATEGORIES as readonly string[]).includes(value);
+}
