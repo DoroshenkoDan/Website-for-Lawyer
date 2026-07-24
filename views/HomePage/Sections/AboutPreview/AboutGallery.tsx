@@ -11,6 +11,14 @@ const SLOT_CLASS: Record<string, string> = {
   E: "hidden lg:flex lg:col-span-2",
 }
 
+const SLOT_POSITION: Record<string, string> = {
+  A: "object-[center_20%]",
+  B: "object-center",
+  C: "object-[center_35%]",
+  D: "object-center",
+  E: "object-[center_35%]",
+}
+
 export function AboutGallery({ className }: { className?: string }) {
   return (
     <ul
@@ -32,7 +40,7 @@ export function AboutGallery({ className }: { className?: string }) {
               src={item.image}
               alt=""
               fill
-              className="object-cover"
+              className={cn("object-cover", SLOT_POSITION[item.id])}
               sizes="(min-width: 1024px) 682px, 100vw"
             />
           ) : (

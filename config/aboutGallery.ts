@@ -4,9 +4,9 @@ export interface AboutGalleryItem {
 }
 
 export const aboutGallery = [
-  { id: "A", image: null },
-  { id: "B", image: null },
-  { id: "C", image: null },
-  { id: "D", image: null },
-  { id: "E", image: null },
+  { id: "A", image: "/images/HomePage/HomePageAbout1.webp" },
+  { id: "B", image: "/images/HomePage/HomePageAbout2.webp" },
+  { id: "C", image: "/images/HomePage/HomePageAbout3.webp" },
+  { id: "D", image: "/images/HomePage/HomePageAbout4.webp" },
+  { id: "E", image: "/images/HomePage/HomePageAbout5.webp" },
 ] as const satisfies readonly AboutGalleryItem[];
