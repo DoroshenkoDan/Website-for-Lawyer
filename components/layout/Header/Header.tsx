@@ -10,13 +10,12 @@ import { Mail } from "lucide-react"
 import { MenuButton } from "./MenuButton"
 import { HeaderMenu } from "./HeaderMenu"
 import { Seal } from "@/components/layout/PageBanner/Seal"
-// TODO: fix header width
 export function Header() {
   const t = useTranslations()
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="fixed top-4 left-5 z-50 w-[calc(100%-40px)] overflow-hidden rounded-2xl bg-header/60 text-on-dark backdrop-blur-md">
+    <header className="fixed top-2 left-4 z-50 w-[calc(100%-32px)] overflow-hidden rounded-2xl bg-header/60 text-on-dark backdrop-blur-md">
       <Container className="flex h-18 items-center gap-4">
         <Link
           href="/"
