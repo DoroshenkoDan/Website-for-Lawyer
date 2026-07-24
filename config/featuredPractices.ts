@@ -6,7 +6,7 @@ export interface FeaturedPractice {
 }
 
 export const featuredPractices = [
-  { practiceId: "electronic-declarations", image: null },
-  { practiceId: "civil-servants-support", image: null },
-  { practiceId: "criminal-law", image: null },
+  { practiceId: "electronic-declarations", image: "/images/HomePage/HomePagePract3.webp" },
+  { practiceId: "civil-servants-support", image: "/images/HomePage/HomePagePract1.webp" },
+  { practiceId: "criminal-law", image: "/images/HomePage/HomePagePract2.webp" },
 ] as const satisfies readonly FeaturedPractice[];
