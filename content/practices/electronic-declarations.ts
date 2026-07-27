@@ -1,6 +1,12 @@
 import type { PracticeContent } from "@/types/practices"
 
 export const electronicDeclarations: PracticeContent = {
+  image: "/images/PracticesPage/PracticesPhoto5.webp",
+  imageAlt: {
+    uk: "Адвокат Регіна Гусейнова поруч із банером про супровід електронного декларування",
+    en: "Attorney Regina Guseinova beside a banner listing her electronic declaration services",
+    pl: "Adwokat Regina Husejnowa obok banera z usługami dotyczącymi deklaracji elektronicznych",
+  },
   body: {
     uk: [
       {

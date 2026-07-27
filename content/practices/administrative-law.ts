@@ -1,6 +1,12 @@
 import type { PracticeContent } from "@/types/practices"
 
 export const administrativeLaw: PracticeContent = {
+  image: "/images/PracticesPage/PracticesPhoto6.webp",
+  imageAlt: {
+    uk: "Адвокат Регіна Гусейнова з розгорнутим кодексом у руках",
+    en: "Attorney Regina Guseinova holding an open legal code",
+    pl: "Adwokat Regina Husejnowa z otwartym kodeksem w rękach",
+  },
   body: {
     uk: [
       {

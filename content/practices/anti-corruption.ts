@@ -1,6 +1,12 @@
 import type { PracticeContent } from "@/types/practices"
 
 export const antiCorruption: PracticeContent = {
+  image: "/images/PracticesPage/PracticesPhoto1.webp",
+  imageAlt: {
+    uk: "Адвокат Регіна Гусейнова з книгою біля стелажа з юридичною літературою",
+    en: "Attorney Regina Guseinova holding a book beside shelves of legal literature",
+    pl: "Adwokat Regina Husejnowa z książką przy regale z literaturą prawniczą",
+  },
   body: {
     uk: [
       {

@@ -1,6 +1,12 @@
 import type { PracticeContent } from "@/types/practices"
 
 export const mediation: PracticeContent = {
+  image: "/images/PracticesPage/PracticesPhoto7.webp",
+  imageAlt: {
+    uk: "Адвокат Регіна Гусейнова біля вікна в офісі",
+    en: "Attorney Regina Guseinova standing by an office window",
+    pl: "Adwokat Regina Husejnowa przy oknie w biurze",
+  },
   body: {
     uk: [
       {

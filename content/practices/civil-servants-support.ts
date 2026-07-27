@@ -1,6 +1,12 @@
 import type { PracticeContent } from "@/types/practices"
 
 export const civilServantsSupport: PracticeContent = {
+  image: "/images/PracticesPage/PracticesPhoto8.webp",
+  imageAlt: {
+    uk: "Адвокат Регіна Гусейнова в робочому кабінеті біля вікна",
+    en: "Attorney Regina Guseinova in her office by the window",
+    pl: "Adwokat Regina Husejnowa w gabinecie przy oknie",
+  },
   body: {
     uk: [
       {
