@@ -1,8 +1,8 @@
 import type { TributeContent } from "@/types/inMemory"
 
-const HERO_IMAGE = "/inMemory/zhanna_guseinova_advokat1-768x504.webp"
-const FIGURE_HEARING = "/inMemory/zhanna_guseinova_advokat3.webp"
-const FIGURE_YOUTH = "/inMemory/zhanna_guseinova_advokat4.webp"
+const HERO_IMAGE = "/images/inMemory/InMemory1.webp"
+const FIGURE_HEARING = "/images/inMemory/InMemory2.webp"
+const FIGURE_YOUTH = "/images/inMemory/InMemory3.webp"
 
 export const tribute: TributeContent = {
   heroImage: HERO_IMAGE,

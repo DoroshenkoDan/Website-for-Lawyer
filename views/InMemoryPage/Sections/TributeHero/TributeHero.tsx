@@ -9,7 +9,7 @@ export function TributeHero() {
   const tNav = useTranslations("nav")
 
   return (
-    <section className="pt-20 lg:pt-24">
+    <section className="pt-20 pb-8 lg:pt-24">
       <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
         <div className="relative flex min-h-[520px] flex-col justify-end overflow-hidden rounded-3xl bg-graphite-deep sm:min-h-[620px] lg:min-h-[680px]">
           <Image

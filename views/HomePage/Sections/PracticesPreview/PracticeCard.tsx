@@ -10,6 +10,7 @@ export interface PracticeCardProps {
   description: string
   href: string
   image: string | null
+  imagePosition?: string
   readMoreLabel: string
 }
 
@@ -21,6 +22,7 @@ export function PracticeCard({
   description,
   href,
   image,
+  imagePosition,
   readMoreLabel,
 }: PracticeCardProps) {
   return (
@@ -42,6 +44,7 @@ export function PracticeCard({
               alt=""
               fill
               className="object-cover"
+              style={imagePosition ? { objectPosition: imagePosition } : undefined}
               sizes="(min-width: 1024px) 200px, 100vw"
             />
           ) : (

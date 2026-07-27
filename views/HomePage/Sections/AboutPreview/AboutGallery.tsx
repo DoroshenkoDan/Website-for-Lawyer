@@ -13,7 +13,7 @@ const SLOT_CLASS: Record<string, string> = {
 
 const SLOT_POSITION: Record<string, string> = {
   A: "object-[center_20%]",
-  B: "object-center",
+  B: "object-[center_35%]",
   C: "object-[center_35%]",
   D: "object-center",
   E: "object-[center_35%]",

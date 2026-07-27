@@ -42,6 +42,7 @@ export function PracticesPreview() {
                   description={tc(`${id}.description`)}
                   href={practice.href}
                   image={featured.image}
+                  imagePosition={featured.imagePosition}
                   readMoreLabel={common("readMore")}
                 />
               </li>
