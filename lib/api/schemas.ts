@@ -23,10 +23,11 @@ export const mediaItemSchema = z.object({
 export const mediaListSchema = z.array(mediaItemSchema);
 
 export const contactRequestSchema = z.object({
-  name: z.string().min(1),
+  name: z.string().min(1).max(200),
   email: z.email(),
-  phone: z.string().optional(),
-  message: z.string().min(1),
-  locale: z.string().optional(),
+  phone: z.string().max(50).optional(),
+  message: z.string().max(450).optional(),
+  locale: z.string().max(5).optional(),
+  website: z.string().optional(),
 });
 export type ContactRequestInput = z.infer<typeof contactRequestSchema>;

@@ -1,5 +1,6 @@
 import { describe, expect, test } from "vitest";
 import { buildContactMessage } from "@/lib/mail/contact-message";
+import { contactRequestSchema } from "@/lib/api/schemas";
 
 describe("buildContactMessage", () => {
   test("puts the sender name in the subject", () => {
@@ -59,5 +60,53 @@ describe("buildContactMessage", () => {
       message: "Перший рядок\nДругий рядок",
     });
     expect(message.text).toContain("Перший рядок\nДругий рядок");
+  });
+
+  test("survives a submission without a message", () => {
+    const message = buildContactMessage({
+      name: "Олена",
+      email: "olena@example.com",
+    });
+    expect(message.text).toContain("(без повідомлення)");
+    expect(message.subject).toContain("Олена");
+  });
+});
+
+describe("contactRequestSchema", () => {
+  test("accepts the shape the form actually sends", () => {
+    const parsed = contactRequestSchema.parse({
+      name: "Олена",
+      email: "olena@example.com",
+      phone: "+380671112233",
+      message: "Текст",
+      website: "",
+      locale: "uk",
+    });
+    expect(parsed.name).toBe("Олена");
+  });
+
+  test("accepts a submission without a message", () => {
+    expect(() =>
+      contactRequestSchema.parse({
+        name: "Олена",
+        email: "olena@example.com",
+      }),
+    ).not.toThrow();
+  });
+
+  test("rejects a message longer than the form allows", () => {
+    expect(() =>
+      contactRequestSchema.parse({
+        name: "Олена",
+        email: "olena@example.com",
+        message: "x".repeat(451),
+      }),
+    ).toThrow();
+  });
+
+  test("rejects a broken email", () => {
+    expect(() =>
+      contactRequestSchema.parse({ name: "Олена", email: "not-an-email" }),
+    ).toThrow();
   });
 });

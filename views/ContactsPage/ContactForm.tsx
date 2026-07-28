@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 import { Check } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 import { Button } from "@/components/ui/button"
@@ -31,6 +31,7 @@ function ErrorBadge({ message }: { message?: string }) {
 
 export function ContactForm() {
   const t = useTranslations("contacts.form")
+  const locale = useLocale()
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle")
 
   const schema = createContactSchema(t)
@@ -48,7 +49,7 @@ export function ContactForm() {
   async function onSubmit(values: ContactFormValues) {
     setStatus("idle")
     try {
-      const res = await fetch("/lib/api/send.php", {
+      const res = await fetch("/api/contacts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -57,6 +58,7 @@ export function ContactForm() {
           phone: values.phone,
           message: values.message,
           website: values.website,
+          locale,
         }),
       })
       if (!res.ok) throw new Error()

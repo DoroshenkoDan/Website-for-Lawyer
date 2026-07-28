@@ -20,7 +20,7 @@ export function buildContactMessage(
     `Телефон: ${input.phone ? singleLine(input.phone) : "—"}`,
     `Мова: ${input.locale ?? "uk"}`,
     "",
-    input.message,
+    input.message?.trim() ? input.message : "(без повідомлення)",
   ].join("\n");
 
   return {
