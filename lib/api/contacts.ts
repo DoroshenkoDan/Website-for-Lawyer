@@ -1,11 +1,16 @@
 import "server-only";
-import { apiFetch } from "./client";
+import { buildContactMessage } from "@/lib/mail/contact-message";
+import { getTransport, mailConfig } from "@/lib/mail/transport";
 import { contactRequestSchema, type ContactRequestInput } from "./schemas";
 
 export async function submitContact(input: ContactRequestInput) {
   const payload = contactRequestSchema.parse(input);
-  await apiFetch(`/contact`, {
-    method: "POST",
-    body: JSON.stringify(payload),
+  const message = buildContactMessage(payload);
+  await getTransport().sendMail({
+    from: mailConfig.from,
+    to: mailConfig.to,
+    replyTo: message.replyTo,
+    subject: message.subject,
+    text: message.text,
   });
 }

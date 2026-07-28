@@ -46,6 +46,14 @@ lib/api/leads.log
 .env*
 !.env.example
 
+# WordPress backend copied from hosting (wp-config.php secrets + 1.4 GB uploads)
+/cms/
+
+# database dumps (contain user table with password hashes and emails)
+*.sql
+*.sql.gz
+*.sql.zip
+
 # certificates, keys & secrets (never commit)
 *.pem
 *.key

@@ -1,0 +1,18 @@
+export const LEGACY_PAGE_REDIRECTS = new Map<string, string>([
+  ["/contact", "/contacts"],
+  ["/blog", "/news"],
+  ["/змі", "/media"],
+  ["/drukovani-vydannya", "/media"],
+  ["/семінари", "/media"],
+  ["/практики", "/practices"],
+  ["/практики/crime-law", "/practices/criminal-law"],
+  ["/практики/civil-law", "/practices/civil-law"],
+  ["/практики/syprovid-derzhsluzhbovciv", "/practices/civil-servants-support"],
+  ["/практики/medpravo", "/practices/medical-law"],
+  ["/практики/anticorruption", "/practices/anti-corruption"],
+  ["/практики/mediation", "/practices/mediation"],
+  ["/адміністративне-право", "/practices/administrative-law"],
+  ["/edeklaracii", "/practices/electronic-declarations"],
+  ["/about/подяки", "/about/awards"],
+  ["/zhanna_guseinova", "/about/in-memory"],
+]);
