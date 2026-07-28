@@ -1,10 +1,15 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
+const buildCpus = Number(process.env.NEXT_BUILD_CPUS);
+
 const nextConfig: NextConfig = {
   reactCompiler: true,
   skipTrailingSlashRedirect: true,
   serverExternalPackages: ["nodemailer"],
+  ...(Number.isInteger(buildCpus) && buildCpus > 0
+    ? { experimental: { cpus: buildCpus } }
+    : {}),
   images: {
     remotePatterns: [
       {
