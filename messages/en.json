@@ -288,5 +288,18 @@
     "partnersTitle": "Partners",
     "terms": "Terms & Conditions",
     "privacy": "Privacy Policy"
+  },
+  "legal": {
+    "eyebrow": "Legal documents",
+    "indexTitle": "Contents",
+    "clauseLink": "Link to clause {number}",
+    "terms": {
+      "title": "Terms & Conditions",
+      "lede": "What you may do with the content of this website, why it does not replace a consultation, and what happens after you send an enquiry."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "lede": "What data the website receives, why it is needed, how long it is kept, and how attorney–client privilege protects your enquiry before any agreement is signed."
+    }
   }
 }

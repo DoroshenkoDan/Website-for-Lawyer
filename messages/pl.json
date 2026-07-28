@@ -288,5 +288,18 @@
     "partnersTitle": "Partnerzy",
     "terms": "Regulamin",
     "privacy": "Polityka prywatności"
+  },
+  "legal": {
+    "eyebrow": "Dokumenty prawne",
+    "indexTitle": "Spis treści",
+    "clauseLink": "Link do punktu {number}",
+    "terms": {
+      "title": "Regulamin",
+      "lede": "Co można robić z materiałami tej strony, dlaczego nie zastępują one konsultacji i co dzieje się po wysłaniu zapytania."
+    },
+    "privacy": {
+      "title": "Polityka prywatności",
+      "lede": "Jakie dane otrzymuje strona, po co są potrzebne, jak długo są przechowywane i jak tajemnica adwokacka chroni Twoje zapytanie jeszcze przed zawarciem umowy."
+    }
   }
 }

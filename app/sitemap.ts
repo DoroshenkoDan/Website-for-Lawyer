@@ -13,6 +13,8 @@ const staticPaths = [
   "/media",
   "/news",
   "/contacts",
+  "/terms",
+  "/privacy",
   ...practices.map((p) => p.href),
 ];
 
