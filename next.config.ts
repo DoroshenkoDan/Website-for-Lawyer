@@ -7,9 +7,10 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   skipTrailingSlashRedirect: true,
   serverExternalPackages: ["nodemailer"],
-  ...(Number.isInteger(buildCpus) && buildCpus > 0
-    ? { experimental: { cpus: buildCpus } }
-    : {}),
+  experimental: {
+    globalNotFound: true,
+    ...(Number.isInteger(buildCpus) && buildCpus > 0 ? { cpus: buildCpus } : {}),
+  },
   images: {
     remotePatterns: [
       {

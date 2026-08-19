@@ -29,6 +29,21 @@
     "getConsultation": "Uzyskaj konsultację",
     "playVideo": "Odtwórz wideo"
   },
+  "errorPages": {
+    "notFound": {
+      "eyebrow": "404",
+      "title": "Strony nie znaleziono",
+      "description": "Być może została przeniesiona lub już nie istnieje. Sprawdź adres lub wróć na stronę główną.",
+      "homeCta": "Strona główna",
+      "contactsCta": "Skontaktuj się ze mną"
+    },
+    "serverError": {
+      "title": "Coś poszło nie tak",
+      "description": "Wystąpił błąd po naszej stronie. Spróbuj odświeżyć stronę lub wróć później.",
+      "retryCta": "Spróbuj ponownie",
+      "homeCta": "Strona główna"
+    }
+  },
   "home": {
     "hero": {
       "eyebrow": "Adwokat",

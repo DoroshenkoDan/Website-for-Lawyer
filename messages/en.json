@@ -29,6 +29,21 @@
     "getConsultation": "Get a consultation",
     "playVideo": "Play video"
   },
+  "errorPages": {
+    "notFound": {
+      "eyebrow": "404",
+      "title": "Page not found",
+      "description": "It may have been moved or no longer exists. Check the address or return to the homepage.",
+      "homeCta": "Back to homepage",
+      "contactsCta": "Contact me"
+    },
+    "serverError": {
+      "title": "Something went wrong",
+      "description": "Something broke on our end. Try reloading the page or come back later.",
+      "retryCta": "Try again",
+      "homeCta": "Back to homepage"
+    }
+  },
   "home": {
     "hero": {
       "eyebrow": "Attorney",
