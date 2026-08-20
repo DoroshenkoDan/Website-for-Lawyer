@@ -14,9 +14,8 @@ export default function proxy(request: NextRequest) {
   }
 
   if (pathname.length > 1 && pathname.endsWith("/")) {
-    const url = request.nextUrl.clone();
-    const stripped = pathname.replace(/\/+$/, "");
-    url.pathname = stripped === "" ? "/" : stripped;
+    const stripped = pathname.replace(/\/+$/, "") || "/";
+    const url = new URL(stripped + request.nextUrl.search, request.url);
     return NextResponse.redirect(url, 308);
   }
 
